@@ -1,0 +1,160 @@
+# Srijit Seal | Upcoming Engagements 2026
+# Focus: AI/ML, Predictive Modeling, and Drug Discovery
+
+
+- id: act-2026-ai-workflows-ce
+  title: "Autonomous Discovery: Deploying AI Workflows for Pharmaceutical Development"
+  venue: ACT 2026 Continuing Education (CE) Course
+  date: November 2026
+  location: United States
+  website: "https://www.actox.org"
+
+- id: act-2026-ai-professional-judgment
+  title: "Maintaining Professional Judgment in AI-Driven Toxicology"
+  venue: ACT 2026 Scientific Session
+  date: November 2026
+  location: United States
+  website: "https://www.actox.org"
+
+- id: ascct-2026-ai-ml-toxicology
+  title: "AI/ML for Toxicology"
+  venue: ASCCT 2026 Annual Meeting
+  date: October 2026
+  location: Durham, NC, US
+  website: "https://www.ascctox.org/annual-meeting"
+
+- id: discovery-on-target-2026-ai-ml
+  title: "AI/ML for Early Discovery Decision-Making"
+  venue: Discovery on Target 2026
+  date: September 2026
+  location: Boston, MA, US
+  website: "https://www.discoveryontarget.com/"
+
+- id: pcrm-summer-immersion-2026-ai-ml
+  title: "AI/ML for Chemical Data Decision-Making"
+  venue: 2026 Summer Immersion on Innovative Approaches in Science
+  date: June 2026
+  location: Baltimore, MD, US
+  website: "https://www.pcrm.org/ethical-science/summer-immersion"
+
+- id: biotechx-2026-ai-tox
+  title: "AI/ML for Toxicology Pipelines"
+  venue: BioTechX USA 2026
+  date: September 2026
+  location: Hynes Convention Center, Boston, MA, US
+  website: "https://www.terrapinn.com/conference/biotechxusa/index.stm"
+
+- id: gta-2026-ai-genetic-tox
+  title: "Integrating AI into Genetic Toxicology Workflows"
+  venue: Genetic Toxicology Association (GTA) CE Course
+  date: May 2026
+  location: Newark, DE, US
+  website: "https://gta-us.org"
+  
+- id: drug-discovery-online-2026-ai
+  title: "AI in the Drug Discovery Lifecycle"
+  venue: Drug Discovery Online Virtual Panel
+  date: March 2026
+  location: Online
+  website: "https://www.drugdiscoveryonline.com"
+  
+- id: mcbios-2026-ai-adverse-events
+  title: "From Data to Detection: AI-Driven Frameworks for Adverse Event Prediction"
+  venue: MCBIOS Annual Conference
+  date: March 2026
+  location: Tampa, FL, US
+  website: "https://mcbios.org"
+  
+
+- id: sot-2026-omics-ce
+  title: "Pitfalls in Prediction: How Not to Use Omics Data for Toxicity Forecasting"
+  venue: SOT 2026 Continuing Education (CE) Course
+  date: March 2026
+  location: San Diego, CA, US
+  website: "https://www.toxicology.org/events/am/am2026"
+  
+- id: bps-bts-2026-ml-tox
+  title: "The Five Pillars of Success: Machine Learning for Toxicity Prediction"
+  venue: British Pharmacological Society & British Toxicology Society Joint Webinar
+  date: January 2026
+  location: Online (UK)
+  website: "https://www.bps.ac.uk/events-landing"
+  status: Completed
+  
+- id: ascct-2025-ce-course
+  title: "AI/ML in Toxicology"
+  venue: ASCCT 2025 CE Course
+  date: October 2025
+  location: Washington, DC, US
+  venue_url: "https://www.ascctox.org/"
+
+- id: fsa-ai-ml-2025
+  title: "Machine Learning for Toxicity Prediction Using Chemical Structures: Pillars for Success in the Real World"
+  venue: Food Standards Agency Workshop
+  date: October 2025
+  location: London, UK
+  venue_url: "https://cot.food.gov.uk/"
+
+- id: nc3rs-bts-webinar-2025
+  title: "Joint Webinar - AI Applications in Toxicology"
+  venue: National Centre for the Replacement, Refinement and Reduction of Animals in Research (NC3Rs) & British Toxicology Society (BTS) Joint Webinar
+  date: September 2025
+  location: Online
+  venue_url: "https://nc3rs.org.uk/events"
+  
+- id: biotechx-usa-2025
+  title: "Cell Painting Gallery"
+  venue: BioTechX USA 2025
+  date: September 2025
+  location: Philadelphia, PA, US
+  venue_url: "https://www.biotechx.com/usa/"
+
+- id: SBP-2025
+  title: "AI for Spatial Omics"
+  venue: 2nd American Spatial Biology Congress Global Engage
+  date: June 2025
+  location: Philadelphia, PA, US
+  venue_url: "https://global-engage.com/product/american-spatial-biology/"
+  
+- id: GTA-2025
+  title: "GTA Annual Meeting: The Last Mile: Opportunities to Bridge Research and Increase Impact in Human and Environmental Health Science"
+  venue: University of Delaware
+  date: May 2025
+  location: Newark, DE, US
+  venue_url: "https://gta-us.org/annualmeeting/"
+
+- id: SOT-2025
+  title: "Using Generative AI to 'Turn' Safe but Inactive Molecules into Effective Ligands"
+  venue:  Society of Toxicology (SOT)
+  date: March 2025
+  location: Orlando, Florida, US
+  venue_url: "https://www.toxicology.org/events/am/AM2025"
+  
+- id: ascctox-2024
+  title: "Pharmacokinetic Parameters and Cell Morphology Data for Predicting Toxicity"
+  venue: American Society for Cellular and Computational Toxicology (ASCCT) 
+  date: October 2024
+  location: Research Triangle Park, North Carolina , US
+  venue_url: "https://www.ascctox.org/annual-meeting"
+  
+- id: chicago-2024
+  title: "An Introduction to Machine Learning and Chemoinformatics"
+  venue: The University of Chicago Data Science Institute 
+  date: July 2024
+  location: Chicago, US
+  venue_url: "https://datascience.uchicago.edu/events/aiscience-summer-school-2024/"
+  
+- id: discotox-2024
+  title: "How NOT to Lie with Machine Learning Models when Predicting Small-molecule Toxicity?"
+  venue: British Toxicology Society (BTS) Discovery Toxicology 2024 
+  date: June 2024
+  location:  AstraZeneca, Cambridge, UK
+  venue_url: "https://www.eventbrite.co.uk/e/disco-at-the-disc-bts-discovery-toxicology-2024-tickets-806294256827"
+  
+- id: odec-2024
+  title: "Machine Learning in Drug Discovery: How Not to Lie with Computational Models?"
+  venue: ODSC East Conference 2024 
+  date: April 2024
+  location:  Cambridge, US
+  venue_url: "https://odsc.com/boston/"
+  

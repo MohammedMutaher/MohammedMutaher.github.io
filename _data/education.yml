@@ -1,11 +1,18 @@
-- name: University of Washington 
+- name: Broad Institute of MIT and Harvard 
   description: >-
-    Ph. D in Computer Science, advised by <a href="https://smseitz.com">Steven M. Seitz</a> and
-    <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>.<br />
-    Supported by Samsung Scholarship 2015-2020 ($50,000/year for 5 years)
-  dates: Fall 2015 - Spring 2022
+    Working on Cell Painting and OASIS Consortium, advised by <a href="https://www.broadinstitute.org/bios/anne-e-carpenter">Anne Carpenter</a> and
+    <a href="https://www.broadinstitute.org/bios/shantanu-singh">Shantanu Singh</a>.<br />
+    Supported by OASIS Consortium
+  dates: Sept 2023 - Current
+  
+- name: University of Cambridge 
+  description: >-
+    PhD in Chemistry, advised by <a href="https://www.ch.cam.ac.uk/person/ab454">Andreas Bender</a> <br />
+    Supported by Cambridge University Commonwealth Scholarship (~$55k/year for 4 years)
+  dates: Oct 2020 - Sept 2024
 
-- name: University of Illinois at Urbana-Champaign
+- name: University of Cambridge 
   description: >-
-    B.S. in Computer Science, advised by <a href="https://dhoiem.cs.illinois.edu/">Derek Hoiem</a>.
-  dates: Fall 2009 - Spring 2013
+    MPhil in Chemistry, advised by <a href="https://www.ch.cam.ac.uk/person/ab454">Andreas Bender</a> <br />
+    Supported by Clare Hall Scholarship (~$55k 1 year)
+  dates: Oct 2019 - Sept 2020

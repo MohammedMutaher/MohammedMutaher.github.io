@@ -1,136 +1,425 @@
-- id: illuminerf
-  title: "IllumiNeRF 3D Relighting without Inverse Rendering"
-  venue: NeurIPS, 2024
-  description: "3D relighting by distilling samples from a 2D image relighting diffusion model into a latent-variable NeRF."
-  project_page: https://illuminerf.github.io
-  arxiv: 2406.06527
-  image: illuminerf_before.jpg
-  image_mouseover: illuminerf_after.mp4
+- id: ai_agents_drug_discovery
+  title: "AI agents in drug discovery: applications and case studies"
+  venue: Drug Discovery Today, 2026
+  OAlink: https://www.sciencedirect.com/science/article/pii/S1359644626000553
+  image: ai_agents_drug_discovery.jpg
+  tags:
+    - ai-ml
+    - drug-discovery
   authors:
-    - xiaomingzhao
-    - pratuls
-    - dorverbin
-    - keunhong
-    - rmbrualla
-    - phenzler
-- id: reconfusion
-  title: "ReconFusion: 3D Reconstruction with Diffusion Priors"
-  venue: CVPR, 2024
-  description: "Using an multi-view image conditioned diffusion model to regularize a NeRF enabled few-view reconstruction."
-  project_page: https://reconfusion.github.io
-  arxiv: 2312.02981
-  image: reconfusion_before.png
-  image_mouseover: reconfusion_after.mp4
-  authors:
-    - rundiwu
-    - bmild
-    - phenzler
-    - keunhong
-    - ruiqigao
-    - danielwatson
-    - pratuls
-    - dorverbin
-    - barron
-    - pooleb
-    - holynski
-- id: hypernerf
-  title: "CamP: Camera Preconditioning for Neural Radiance Fields"
-  venue: SIGGRAPH Asia, 2023
-  description: "Preconditioning camera optimization during NeRF training significantly improves their ability to jointly recover the scene and camera parameters."
-  project_page: "https://camp-nerf.github.io"
-  github: jonbarron/camp_zipnerf
-  arxiv: 2308.10902
-  image: camp_before.jpg
-  image_mouseover: camp_after.mp4
-  authors:
-    - keunhong
-    - phenzler
-    - bmild
-    - barron
-    - rmbrualla
-  awards:
-    - "Journal Paper"
+    - huynh
+    - srijit
+    - dylan_reid
+    - carpenter
+    - bender
+    - spjuth
+    - aia4s
 
-- id: hypernerf
-  title: "HyperNeRF: A Higher-Dimensional Representation for Topologically Varying Neural Radiance Fields"
-  venue: SIGGRAPH Asia, 2021
-  description: "By applying ideas from level set methods, we can represent topologically changing scenes with NeRFs."
-  project_page: "https://hypernerf.github.io"
-  github: google/hypernerf
-  arxiv: 2106.13228
-  image: hypernerf_before.jpg
-  image_mouseover: hypernerf_after.mp4
+- id: transfer_learning_eskape
+  title: "Transfer learning enables discovery of sub-micromolar antibacterials for ESKAPE pathogens from ultra-large chemical spaces"
+  venue: Chemical Science, 2025
+  OAlink: https://pubs.rsc.org/en/content/articlelanding/2025/sc/d5sc03055b
+  image: transfer_learning_antibacterials.gif
+  tags:
+    - ai-ml
+    - cheminformatics
+    - drug-discovery
   authors:
-    - keunhong
-    - utsinh
-    - hedman
-    - barron
-    - sofien
-    - dgo
-    - rmbrualla
-    - smseitz
+    - garcia_ortegon
+    - srijit
+    - geddes
+    - littler
+    - guy
+    - whiteside
+    - rasmussen
+    - bender
+    - bacallado
 
-- id: fignerf
-  title: "FiG-NeRF: Figure Ground Neural Radiance Fields for 3D Object Category Modelling "
-  venue: 3DV, 2021
-  description: "Given a lot of images of an object category, you can train a NeRF to render them from novel views and interpolate between different instances."
-  project_page: "https://fig-nerf.github.io"
-  arxiv: 2104.08418
-  image: fignerf_before.jpg
-  image_mouseover: fignerf_after.mp4
+- id: infoalign
+  title: "Learning Molecular Representation in a Cell"
+  venue: ICLR, 2025
+  project_page: https://iclr.cc/virtual/2025/poster/30563
+  OAlink: https://openreview.net/forum?id=BbZy8nI1si
+  image: infoalign.png
+  github: liugangcode/InfoAlign
+  arxiv: "2406.12056"
+  tags:
+    - ai-ml
+    - cell-painting
+    - drug-discovery
   authors:
-    - chrisxie
-    - keunhong
-    - rmbrualla
-    - mtbr
+    - gang_liu
+    - srijit
+    - arevalo
+    - zhenwen_liang
+    - carpenter
+    - meng_jiang
+    - singh
 
-- id: nerfies
-  title: "Nerfies: Deformable Neural Radiance Fields"
-  venue: ICCV, 2021
-  description: "Learning deformation fields with a NeRF let's you reconstruct non-rigid scenes with high fidelity."
-  project_page: "https://nerfies.github.io"
-  github: google/nerfies
-  arxiv: 2011.12948
-  image: nerfies_before.jpg
-  image_mouseover: nerfies_after.mp4
+- id: Progress_image_profiling
+  title: "Progress and new challenges in image-based profiling"
+  venue: Molecular Systems Biology, 2026
+  OAlink: https://link.springer.com/article/10.1038/s44320-026-00197-7
+  arxiv: "2508.05800"
+  image: progress.png
+  tags:
+    - cell-painting
+    - reviews
   authors:
-    - keunhong
-    - utsinh
-    - barron
-    - sofien
-    - dgo
-    - smseitz
-    - rmbrualla
-  awards:
-    - "Oral Presentation"
+    - serrano
+    - peters
+    - wagner
+    - graham
+    - chen
+    - feng
+    - miranda
+    - kalinin
+    - vulliard
+    - tomkinson
+    - cameron_mattson
+    - lippincott
+    - kang
+    - sitani
+    - bunten
+    - srijit
+    - carragher
+    - carpenter
+    - singh
+    - marin_zapata
+    - caicedo
+    - way
 
-- id: latentfusion
-  title: "LatentFusion: End-to-End Differentiable Reconstruction and Rendering for Unseen Object Pose Estimation "
-  venue: CVPR, 2020
-  description: "By learning to predict geometry from images, you can do zero-shot pose estimation with a single network."
-  project_page: "https://latentfusion.github.io"
-  github: NVlabs/latentfusion
-  arxiv: 1912.00416
-  image: latentfusion_before.jpg
-  image_mouseover: latentfusion_after.mp4
+- id: ML_toxicity_pillars
+  title: "Machine Learning for Toxicity Prediction Using Chemical Structures: Pillars for Success in the Real World"
+  venue: Chemical Research in Toxicology, 2025
+  OAlink: https://pubs.acs.org/doi/10.1021/acs.chemrestox.5c00033
+  image: giant.png
+  tags:
+    - ai-ml
+    - cheminformatics
+    - toxicology
+    - reviews
   authors:
-    - keunhong
-    - amousavian
-    - yux
-    - fox
+    - srijit
+    - mahale
+    - garcia_ortegon
+    - joshi
+    - hosseini_gerami
+    - beatson
+    - greenig
+    - shekhar
+    - patra
+    - weis
+    - mehrjou
+    - badre
+    - paisley
+    - lowe
+    - singh
+    - fshah
+    - johannesson
+    - williams
+    - rouquie
+    - clevert
+    - schwab
+    - richmond
+    - nicolaou
+    - gonzalez_r
+    - bender
 
-- id: photoshape
-  title: "PhotoShape: Photorealistic Materials for Large-Scale Shape Collections"
-  venue: SIGGRAPH Asia, 2018
-  description: "By pairing large collections of images, 3D models, and materials, you can create thousands of photorealistic 3D models fully automatically."
-  project_page: "https://photoshape.github.io"
-  github: keunhong/photoshape
-  arxiv: 1809.09761
-  image: photoshape.jpg
+- id: small_molecule_bioactivity
+  title: "Counting cells can accurately predict small-molecule bioactivity benchmarks"
+  venue: Nature Communications, 2026
+  OAlink: https://www.nature.com/articles/s41467-026-68725-5
+  biorxiv: 10.1101/2025.04.27.650853v1
+  image: cellcount.png
+  tags:
+    - cell-painting
+    - drug-discovery
   authors:
-    - keunhong
-    - krematas
-    - ali
-    - smseitz
-  awards:
-    - "Journal Cover"
+    - srijit
+    - dee
+    - shah
+    - cerisier
+    - zhang
+    - miglietta
+    - titterton
+    - cabrera
+    - boiko
+    - beatson
+    - slabaugh
+    - taboureau
+    - carreras_puigvert
+    - singh
+    - spjuth
+    - bender
+    - carpenter
+
+- id: cell_painting_hepatocytes
+  title: "Cell Painting for cytotoxicity and mode-of-action analysis in primary human hepatocytes"
+  venue: Cell Systems, 2026
+  OAlink: https://www.sciencedirect.com/science/article/pii/S2405471226000487
+  biorxiv: 10.1101/2025.01.22.634152v1
+  image: cell_painting_hepatocytes.jpg
+  tags:
+    - cell-painting
+    - drug-discovery
+    - toxicology
+  authors:
+    - ewald
+    - titterton
+    - bauerle
+    - beatson
+    - boiko
+    - cabrera
+    - cheah
+    - cimini
+    - gorissen
+    - harrill
+    - thouis_jones
+    - karczewski
+    - crute
+    - rouquie
+    - srijit
+    - weisbart
+    - white
+    - carpenter
+    - singh
+    
+- id: Advice
+  title: "Advice for Bad Computational Toxicologists"
+  venue: NAM Journal, 2025
+  OAlink: https://srijitseal.com/pdf_publications/Advice_Bad_Computational_Toxicologists_v3.pdf
+  image: advicebad.png
+  tags:
+    - toxicology
+    - reviews
+  authors:
+    - srijit
+    - hartung
+
+- id: CPReview
+  title: "Cell Painting: a decade of discovery and innovation in cellular imaging"
+  venue: Nature Methods, 2024
+  Journal_notOA_link: https://www.nature.com/articles/s41592-024-02528-8
+  OAlink: https://rdcu.be/d2vHH
+  image: CPReview.png
+  tags:
+    - cell-painting
+    - reviews
+  authors:
+    - srijit
+    - trapotsi
+    - spjuth
+    - carreras_puigvert
+    - greene
+    - singh
+    - bender
+    - carpenter
+  
+- id: DICTrank
+  title: "Insights into Drug Cardiotoxicity from Biological and Chemical Data: The First Public Classifiers for FDA Drug-Induced Cardiotoxicity Rank"
+  venue: Journal of Chemical Information and Modeling, 2024
+  project_page: https://broad.io/DICTrank_Predictor
+  OAlink: https://pubs.acs.org/doi/10.1021/acs.jcim.3c01834
+  image: DICTrank.png
+  github: srijitseal/DICTrank
+  tags:
+    - cheminformatics
+    - drug-discovery
+    - toxicology
+    - tools
+  #image_mouseover: reconfusion_after.mp4
+  authors:
+    - srijit
+    - spjuth
+    - hosseini_gerami
+    - garcia_ortegon
+    - singh
+    - bender
+    - carpenter
+
+
+- id: mitochondrial_toxicity_detection
+  title: Integrating Cell Morphology with Gene Expression and Chemical Structure to aid Mitochondrial Toxicity detection
+  venue: Communications Biology, 2022
+  OAlink: "https://www.nature.com/articles/s42003-022-03763-5"
+  image: mitochondrial_toxicity_detection.webp
+  tags:
+    - cell-painting
+    - cheminformatics
+    - toxicology
+  authors:
+    - srijit
+    - carreras_puigvert
+    - trapotsi
+    - yang
+    - spjuth
+    - bender
+
+- id: cytotoxicity_prediction
+  title: "Comparison of Cellular Morphological descriptors and Molecular Fingerprints for the prediction of Cytotoxicity- and Proliferation-related assays"
+  venue: Chemical Research in Toxicology, 2021
+  project_page: "https://www.repository.cam.ac.uk/items/00cc61cf-671b-4398-8691-a3905389dc81"
+  pdf_link: "https://www.repository.cam.ac.uk/bitstreams/a2e4aec2-65c8-4426-8ebc-d6cecf676473/download"
+  Journal_notOA_link: https://pubs.acs.org/doi/10.1021/acs.chemrestox.0c00303
+  image: cytotoxicity_prediction.webp
+  tags:
+    - cell-painting
+    - cheminformatics
+    - toxicology
+  authors:
+    - srijit
+    - yang
+    - vollmers
+    - bender
+
+- id: AI_in_biology
+  title: "Understanding Biology in the Age of Artificial Intelligence"
+  venue: arXiv, 2024
+  project_page: "https://understanding.bio"
+  image: AI_in_biology.png
+  arxiv: "2403.04106"
+  tags:
+    - ai-ml
+    - reviews
+  authors:
+    - lawrence
+    - el_shazly
+    - srijit
+    - joshi
+    - lio
+    - singh
+    - bender
+    - sormanni
+    - greenig
+
+- id: drug_toxicity_prediction
+  title: Using Chemical and Biological data to Predict Drug Toxicity
+  venue: SLAS Discovery, 2023
+  OAlink: https://www.sciencedirect.com/science/article/pii/S2472555222137147
+  image: drug_toxicity_prediction.jpg
+  tags:
+    - cheminformatics
+    - drug-discovery
+    - toxicology
+  authors:
+    - liu
+    - srijit
+    - yang
+    - bender
+
+- id: bioactivity_predictions_merging
+  title: Merging Bioactivity Predictions from Cell Morphology and Chemical Fingerprint models using Similarity to Training data
+  venue: Journal of Cheminformatics, 2023
+  OAlink: "https://link.springer.com/article/10.1186/s13321-023-00723-x"
+  image: bioactivity_predictions_merging.webp
+  github: srijitseal/Merging_Bioactivity_Predictions_CellPainting_Chemical_Structure_Similarity
+  tags:
+    - cell-painting
+    - cheminformatics
+    - drug-discovery
+  authors:
+    - srijit
+    - yang
+    - trapotsi
+    - singh
+    - carreras_puigvert
+    - spjuth
+    - bender
+
+- id: pixels_to_phenotypes
+  title: "From pixels to phenotypes: Integrating image-based profiling with cell health data as BioMorph features improves interpretability"
+  venue: Molecular Biology of the Cell, 2024
+  project_page: https://broad.io/biomorph
+  OAlink: "https://www.molbiolcell.org/doi/full/10.1091/mbc.E23-08-0298"
+  image: pixels_to_phenotypes.svg
+  github: srijitseal/BioMorph
+  tags:
+    - cell-painting
+    - tools
+  authors:
+    - srijit
+    - carreras_puigvert
+    - singh
+    - carpenter
+    - spjuth
+    - bender
+
+- id: generative_modeling_potency
+  title: Using Generative Modeling to Endow with Potency Initially Inert Compounds with Good Bioavailability and Low Toxicity
+  venue: Journal of Chemical Information and Modeling, 2024
+  OAlink: https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01777
+  image: generative_modeling_potency.webp
+  github: Jaredwg2000/MolDQN_CNS
+  tags:
+    - ai-ml
+    - cheminformatics
+    - drug-discovery
+  authors:
+    - horne
+    - wilson_godber
+    - gonzalez_diaz
+    - brotzakis
+    - srijit
+    - gregory_r 
+    - possenti 
+    - chia
+    - vendruscolo
+
+- id: liver_injury_early_detection
+  title: "Improved Detection of Drug-Induced Liver Injury by Integrating Predicted In Vivo and In Vitro Data"
+  venue: Chemical Research in Toxicology, 2024
+  project_page: https://broad.io/DILIPredictor
+  OAlink: https://pubs.acs.org/doi/10.1021/acs.chemrestox.4c00015
+  image: liver_injury_early_detection.png
+  biorxiv: 10.1101/2024.01.10.575128v1.full
+  github: srijitseal/DILI
+  tags:
+    - cheminformatics
+    - toxicology
+    - tools
+  authors:
+    - srijit
+    - williams
+    - hosseini_gerami
+    - mahale
+    - carpenter
+    - spjuth
+    - bender
+
+- id: PKSmart
+  title: "PKSmart: an open-source computational model to predict intravenous pharmacokinetics of small molecules"
+  venue: Journal of Cheminformatics, 2025
+  project_page: https://broad.io/PKSmart
+  OAlink: https://link.springer.com/article/10.1186/s13321-025-01066-5
+  image: PKSmart.jpg
+  biorxiv: 10.1101/2024.02.02.578658v1.full
+  github: srijitseal/PKSmart
+  tags:
+    - cheminformatics
+    - drug-discovery
+    - tools
+  authors:
+    - srijit
+    - trapotsi
+    - mahale
+    - subramanian
+    - greene
+    - spjuth
+    - bender
+
+- id: CNS_sideeffect
+  title: "Calibrated prediction of scarce adverse drug reaction labels with conditional neural processes"
+  venue: ICLR 2024 DMLR Workshop
+  OAlink: https://srijitseal.com/pdf_publications/69_calibrated_prediction_of_scarc.pdf
+  image: CNS_sideeffects.png
+  tags:
+    - ai-ml
+    - cheminformatics
+    - toxicology
+  authors:
+    - garcia_ortegon
+    - srijit
+    - singh
+    - bender
+    - bacallado

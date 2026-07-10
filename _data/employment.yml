@@ -1,47 +1,35 @@
-- company: World Labs
-  description: Founding Member
-  dates: "Jan 2024 - (current)"
-  location: San Francisco, CA
+- company: Merck
+  description: Senior Scientist
+  dates: "Jan 2025 - March 2026"
+  location: Philadelphia, PA, US
 
-- company: Google
-  description: Research Scientist
-  dates: "May 2022 - Jan 2024"
-  location: San Francisco, CA
+- company: Broad Institute of MIT and Harvard
+  description: Visiting Scholar
+  dates: "Sept 2023 - Dec 2024"
+  location: Cambridge, MA, US
 
-- company: Google
-  description: >-
-    Research Intern on the <a href="https://blog.google/technology/research/project-starline/">Project Starline</a> team.
-    Worked on <a href="https://nerfies.github.io">Nerfies</a> and <ahref="https://hypernerf.github.io">HyperNeRF</a>.
-  dates: "Jun 2020 - Sep 2021"
-  location: Seattle, WA
+- company: AbsoluteAI (Ignota Labs)
+  description: Chemoinformatics consultant
+  dates: "Oct 2022 - July 2023"
+  location: London, UK
 
-- company: NVIDIA
-  description: >-
-    Robotics Research Intern at the <a href="https://www.nvidia.com/en-us/research/robotics/">Seattle Robotics Lab</a>.
-    Worked on <a href="https://latentfusion.github.io">LatentFusion</a>.
-  dates: "Jul 2019 - Nov 2019"
-  location: Seattle, WA
+- company: PangeAI (PangeaBotanica)
+  description: Chemoinformatics consultant
+  dates: "Dec 2022 - May 2023"
+  location: London, UK
 
-- company: Amazon
-  description: >- 
-    Applied Scientist Intern on the <a href="https://amazon.com/go">Amazon Go</a> team.
-    Worked on human activity detection.
-  dates: "Jul 2017 - Sep 2017"
-  location: Seattle, WA
+- company: University of Cambridge
+  description: Supervisor and Demonstrator for Undergraduate Courses
+  dates: "Oct 2019 - Sept 2023"
+  location: Cambridge, UK
 
-- company: Ministry of National Defense, Cyber Command
-  description: Software Engineer (mandatory military service). Worked on network monitoring software.
-  dates: "Oct 2013 - Jul 2015"
-  location: Seoul, Korea
+- company: Freie University Berlin
+  description: Visiting Research Scholar
+  dates: "Dec 2018 - Feb 2019"
+  location: Berlin, Germany
 
-- company: Google
-  description: Software Engineering Intern. Create document conversion system for Google Cloud Print.
-  dates: "May 2013 - Aug 2013"
-  location: Mountain View, CA
+- company: Japan Advanced Institute of Science and Technology
+  description: Visiting Scholar
+  dates: "May 2018 - Aug 2018"
+  location: Nomi, Japan
 
-- company: Qualcomm
-  description: >-
-    Software Engineering Intern. Optimized performance of JGit, reducing push times from hours to seconds.
-    Implemented multi-master support for Gerrit Code Review.
-  dates: "May 2012 - Aug 2012"
-  location: Boulder, CO

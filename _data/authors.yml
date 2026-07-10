@@ -1,106 +1,501 @@
-keunhong:
-  first_name: Keunhong
-  last_name: Park
-  website: https://keunhong.com
+srijit:
+  first_name: Srijit
+  last_name: Seal
+  website: https://srijitseal.com
   is_me: true
-rmbrualla:
-  first_name: Ricardo
-  last_name: Martin-Brualla
-  website: https://ricardomartinbrualla.com
-smseitz:
-  first_name: Steven 
-  middle_name: M.
-  last_name: Seitz
-  website: https://smseitz.com
-ali:
-  first_name: Ali
-  last_name: Farhadi
-  website: https://homes.cs.washington.edu/~ali/
-krematas:
-  first_name: Kostas
-  last_name: Rematas
-  website: https://krematas.com
-barron:
-  first_name: Jonathan
-  middle_name: T.
-  last_name: Barron
-  website: https://jonbarron.info
-sofien:
-  first_name: Sofien
-  last_name: Bouaziz
-  website: http://sofienbouaziz.com/
-utsinh:
-  first_name: Utkarsh
-  last_name: Sinha
-  website: https://utkarshsinha.com/
-dgo:
-  first_name: Dan
-  middle_name: B
-  last_name: Goldman
-  website: https://www.danbgoldman.com/home/
-amousavian:
-  first_name: Arsalan
-  last_name: Mousavian
-  website: https://cs.gmu.edu/~amousavi/
-yux:
-  first_name: Yu
-  last_name: Xiang
-  website: https://yuxng.github.io/
-fox:
-  first_name: Dieter
-  last_name: Fox
-  website: https://homes.cs.washington.edu/~fox/
-chrisxie:
-  first_name: Christopher
-  last_name: Xie
-  website: https://chrisdxie.github.io/
-mtbr:
-  first_name: Matthew
-  middle_name: A.
-  last_name: Brown
-  website: http://matthewalunbrown.com/
-hedman:
-  first_name: Peter
-  last_name: Hedman
-  website: https://phogzone.com
-phenzler:
-  first_name: Philipp
-  last_name: Henzler
-  website: https://henzler.github.io
-bmild:
-  first_name: Ben
-  last_name: Mildenhall
-  website: https://bmild.github.io
-holynski:
-  first_name: Aleksander
-  last_name: Holynski
-  website: https://holynski.org
-pooleb:
-  first_name: Ben
-  last_name: Poole
-  website: https://poolio.github.io
-rundiwu:
-  first_name: Rundi
-  last_name: Wu
-  website: https://www.cs.columbia.edu/~rundi/
-ruiqigao:
-  first_name: Ruiqi
-  last_name: Gao
-  website: https://ruiqigao.github.io
-danielwatson:
-  first_name: Daniel
-  last_name: Watson
-  website: https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/
-pratuls:
-  first_name: Pratul
-  last_name: Srinivasan
-  website: https://pratulsrinivasan.github.io
-dorverbin:
-  first_name: Dor
-  last_name: Verbin
-  website: https://dorverbin.github.io
-xiaomingzhao:
-  first_name: Xiaoming
-  last_name: Zhao
-  website: https://xiaoming-zhao.com/
 
+hartung:
+  first_name: Thomas
+  last_name: Hartung
+  website: https://publichealth.jhu.edu/faculty/2308/thomas-hartung
+  
+bender:
+  first_name: Andreas
+  last_name: Bender
+  website: https://www.ch.cam.ac.uk/person/ab454
+
+carpenter:
+  first_name: Anne
+  middle_name: E.
+  last_name: Carpenter
+  website: https://www.broadinstitute.org/bios/anne-e-carpenter
+
+spjuth:
+  first_name: Ola
+  last_name: Spjuth
+  website: https://www.katalog.uu.se/profile?id=N2-878
+
+trapotsi:
+  first_name: Marianna
+  last_name: Trapotsi
+  website: 
+
+yang:
+  first_name: Yang
+  last_name: Hongbin
+  website: 
+
+carreras_puigvert:
+  first_name: Jordi
+  last_name: Carreras Puigvert
+  website: https://pharmb.io/people/jordi/
+
+singh:
+  first_name: Shantanu
+  last_name: Singh
+  website: https://www.broadinstitute.org/bios/shantanu-singh
+
+liu:
+  first_name: Anika
+  last_name: Liu
+  website: 
+
+lawrence:
+  first_name: Elsa
+  last_name: Lawrence
+  website: 
+
+el_shazly:
+  first_name: Adham
+  last_name: El-Shazly
+  website: 
+
+joshi:
+  first_name: Chaitanya
+  last_name: Joshi
+  website: 
+
+lio:
+  first_name: Pietro
+  last_name: Lio
+  website: https://scholar.google.com/citations?user=4YhNJBEAAAAJ&hl=en
+
+sormanni:
+  first_name: Pietro
+  last_name: Sormanni
+  website: https://scholar.google.co.uk/citations?user=vUhYt4MuofkC&hl=en
+
+greenig:
+  first_name: Matthew
+  last_name: Greenig
+  website: 
+
+vollmers:
+  first_name: Luis
+  last_name: Vollmers
+  website: 
+
+horne:
+  first_name: Robert
+  last_name: Horne
+  website: 
+
+wilson_godber:
+  first_name: Jared
+  last_name: Wilson-Godber
+  website: 
+
+gonzalez_diaz:
+  first_name: Alicia
+  last_name: Gonzalez Diaz
+  website: 
+
+brotzakis:
+  first_name: Z. Faidon
+  last_name: Brotzakis
+  website: 
+
+gregory_r:
+  first_name: Rebecca
+  middle_name: C.
+  last_name: Gregory
+  website: 
+
+possenti:
+  first_name: Andrea
+  last_name: Possenti
+  website: 
+
+chia:
+  first_name: Sean
+  last_name: Chia
+  website: 
+
+vendruscolo:
+  first_name: Michele
+  last_name: Vendruscolo
+  website: https://scholar.google.com/citations?user=t9MyvDAAAAAJ&hl=en
+
+williams:
+  first_name: Dominic
+  last_name: Williams
+  website: 
+
+hosseini_gerami:
+  first_name: Layla
+  last_name: Hosseini Gerami
+  website: 
+
+subramanian:
+  first_name: Vigneshwari 
+  last_name: Subramanian
+  website: 
+
+garcia_ortegon:
+  first_name: Miguel 
+  last_name: García-Ortegón
+  website: https://mgarort.me/
+
+bacallado:
+  first_name: Sergio 
+  last_name: Bacallado
+  website: https://www.dpmms.cam.ac.uk/~sb2116/
+  
+greene:
+  first_name: Nigel
+  last_name: Greene
+  website: 
+
+serrano:
+  first_name: E.
+  last_name: Serrano
+  website:
+  
+peters:
+  first_name: J.
+  last_name: Peters
+  website:
+  
+wagner:
+  first_name: J.
+  last_name: Wagner
+  website:
+  
+graham:
+  first_name: R.E.
+  last_name: Graham
+  website:
+  
+chen:
+  first_name: Z.
+  last_name: Chen
+  website:
+  
+feng:
+  first_name: B.
+  last_name: Feng
+  website:
+miranda:
+  first_name: G.
+  last_name: Miranda
+  website:
+  
+mahale:
+  first_name: Manas
+  last_name: Mahale
+  website:
+  
+beatson:
+  first_name: Alex
+  last_name: Beatson
+  website:
+  
+shekhar:
+  first_name: Mrinal
+  last_name: Shekhar
+  website:
+  
+patra:
+  first_name: Arijit
+  last_name: Patra
+  website:
+  
+weis:
+  first_name: Caroline
+  last_name: Weis
+  website:
+  
+mehrjou:
+  first_name: Arash
+  last_name: Mehrjou
+  website:
+  
+badre:
+  first_name: Adrien
+  last_name: Badré
+  website:
+  
+paisley:
+  first_name: Brianna
+  last_name: Paisley
+  website:
+  
+lowe:
+  first_name: Rhiannon
+  last_name: Lowe
+  website:
+  
+fshah:
+  first_name: Falgun
+  last_name: Shah
+  website:
+  
+johannesson:
+  first_name: Bjarki
+  last_name: Johannesson
+  website:
+  
+rouquie:
+  first_name: David
+  last_name: Rouquie
+  website:
+  
+clevert:
+  first_name: Djork-Arné
+  last_name: Clevert
+  website:
+  
+schwab:
+  first_name: Patrick
+  last_name: Schwab
+  website:
+  
+richmond:
+  first_name: Nicola
+  last_name: Richmond
+  website:
+  
+nicolaou:
+  first_name: Christos A.
+  last_name: Nicolaou
+  website:
+  
+gonzalez_r:
+  first_name: Raymond J.
+  last_name: Gonzalez
+  website:
+  
+dee:
+  first_name: W.
+  last_name: Dee
+  website:
+  
+shah:
+  first_name: A.
+  last_name: Shah
+  website:
+  
+zhang:
+  first_name: A.
+  last_name: Zhang
+  website:
+  
+titterton:
+  first_name: K.L.
+  last_name: Titterton
+  website:
+  
+cabrera:
+  first_name: Á.A.
+  last_name: Cabrera
+  website:
+  
+boiko:
+  first_name: D.A.
+  last_name: Boiko
+  website:
+  
+ewald:
+  first_name: J.D.
+  last_name: Ewald
+  website:
+  
+bauerle:
+  first_name: A.
+  last_name: Bäuerle
+  website:
+
+huynh:
+  first_name: Dinh Long
+  last_name: Huynh
+  website:
+
+dylan_reid:
+  first_name: Dylan
+  last_name: Reid
+  website:
+
+aia4s:
+  first_name: AIA4S
+  last_name: Consortium
+  website:
+
+geddes:
+  first_name: Emily
+  last_name: Geddes
+  website:
+
+littler:
+  first_name: Jenny L.
+  last_name: Littler
+  website:
+
+guy:
+  first_name: Collette S.
+  last_name: Guy
+  website:
+
+whiteside:
+  first_name: Jonathan
+  last_name: Whiteside
+  website:
+
+rasmussen:
+  first_name: Carl
+  last_name: Rasmussen
+  website:
+
+gang_liu:
+  first_name: Gang
+  last_name: Liu
+  website:
+
+arevalo:
+  first_name: John
+  last_name: Arevalo
+  website:
+
+zhenwen_liang:
+  first_name: Zhenwen
+  last_name: Liang
+  website:
+
+meng_jiang:
+  first_name: Meng
+  last_name: Jiang
+  website:
+
+kalinin:
+  first_name: Alexandr A.
+  last_name: Kalinin
+  website:
+
+vulliard:
+  first_name: Loan
+  last_name: Vulliard
+  website:
+
+tomkinson:
+  first_name: Jenna
+  last_name: Tomkinson
+  website:
+
+cameron_mattson:
+  first_name: Cameron
+  last_name: Mattson
+  website:
+
+lippincott:
+  first_name: Michael J.
+  last_name: Lippincott
+  website:
+
+kang:
+  first_name: Ziqi
+  last_name: Kang
+  website:
+
+sitani:
+  first_name: Divya
+  last_name: Sitani
+  website:
+
+bunten:
+  first_name: Dave
+  last_name: Bunten
+  website:
+
+carragher:
+  first_name: Neil O.
+  last_name: Carragher
+  website:
+
+marin_zapata:
+  first_name: Paula A.
+  last_name: Marin Zapata
+  website:
+
+caicedo:
+  first_name: Juan C.
+  last_name: Caicedo
+  website:
+
+way:
+  first_name: Gregory P.
+  last_name: Way
+  website:
+
+cerisier:
+  first_name: Natacha
+  last_name: Cerisier
+  website:
+
+miglietta:
+  first_name: Esteban
+  last_name: Miglietta
+  website:
+
+slabaugh:
+  first_name: Gregory
+  last_name: Slabaugh
+  website:
+
+taboureau:
+  first_name: Olivier
+  last_name: Taboureau
+  website:
+
+cheah:
+  first_name: Jaime
+  last_name: Cheah
+  website:
+
+cimini:
+  first_name: Beth
+  last_name: Cimini
+  website:
+
+gorissen:
+  first_name: Bram
+  last_name: Gorissen
+  website:
+
+harrill:
+  first_name: Joshua
+  last_name: Harrill
+  website:
+
+thouis_jones:
+  first_name: Thouis
+  last_name: Jones
+  website:
+
+karczewski:
+  first_name: Konrad
+  last_name: Karczewski
+  website:
+
+crute:
+  first_name: Christine
+  last_name: Crute
+  website:
+
+weisbart:
+  first_name: Erin
+  last_name: Weisbart
+  website:
+
+white:
+  first_name: Brandon
+  last_name: White
+  website:
