@@ -17,15 +17,17 @@ layout: null
   <title>{{ site.name }}</title>
   <meta name="description" content="{{ seo_description }}">
   <link rel="canonical" href="{{ canonical_url }}">
-  <meta property="og:title" content="{{ site.name }} | AI for drug discovery and cellular profiling">
+  <meta property="og:title" content="{{ site.name }} | Cancer Immunology and Cell Circuits">
   <meta property="og:description" content="{{ seo_description }}">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="{{ canonical_url }}">
   <meta property="og:image" content="{{ site.url }}/images/portrait.jpg">
+  <!-- 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ site.name }} | AI for drug discovery and cellular profiling">
   <meta name="twitter:description" content="{{ seo_description }}">
   <meta name="twitter:image" content="{{ site.url }}/images/portrait.jpg">
+  -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,20 +35,22 @@ layout: null
     "name": {{ site.name | jsonify }},
     "url": {{ site.url | jsonify }},
     "image": {{ site.url | append: "/images/portrait.jpg" | jsonify }},
-    "jobTitle": "Principal Scientist",
+    "jobTitle": "Graduate Student",
     "worksFor": {
       "@type": "Organization",
-      "name": "Human Chemical Company"
+      "name": "Memorial Sloan Kettering Cancer Center"
     },
     "affiliation": [
       {
         "@type": "Organization",
-        "name": "Uppsala University"
+        "name": "Broad Institute of MIT and Harvard"
       },
+      <!--
       {
         "@type": "Organization",
         "name": "American Society for Cellular and Computational Toxicology"
       }
+      -->
     ],
     "sameAs": [
       "https://scholar.google.com/citations?user={{ site.google_scholar }}",
@@ -54,11 +58,10 @@ layout: null
       {{ site.linkedin_url | jsonify }}
     ],
     "knowsAbout": [
-      "Cheminformatics",
-      "Cell Painting",
-      "Drug discovery",
-      "Computational toxicology",
-      "Machine learning"
+      "Cancer biology",
+      "Immunology",
+      "CRISPR screens",
+      "Notch signaling"
     ]
   }
   </script>
@@ -66,7 +69,7 @@ layout: null
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Publications by Srijit Seal",
+    "name": "Publications by Mohammed Mutaher",
     "itemListElement": [
       {% for publication in site.data.publications %}
       {% assign publication_url = publication.OAlink | default: publication.Journal_notOA_link | default: publication.project_page %}
@@ -118,13 +121,15 @@ layout: null
     <div class="container">
       <div id="navbarBasicExample" class="navbar-menu is-active is-centered">
         <div class="navbar-start" style="margin: 0 auto;">
-          <a class="navbar-item" href="#work">Work</a>
-          <a class="navbar-item" href="#talks">Talks</a>
-          <a class="navbar-item" href="#tutorials">Tutorials</a>
+          <a class="navbar-item" href="#work">Featured research</a>
+          <a class="navbar-item" href="#talks">Conferences</a>
           <a class="navbar-item" href="#publications">Publications</a>
-          <a class="navbar-item" href="{{ '/media-kit/' | relative_url }}">Media Kit</a>
-          <a class="navbar-item" href="https://srijitseal.com/cheminformaticsmeeting">Meetings</a>
-          <a class="navbar-item" href="https://docs.google.com/document/d/e/2PACX-1vS7Iq7mcvPcIWXAFD2nKtHC6ZFMMkOAHUWeYIsdAABvkDMUD-K4NQvUib0o4xc5gAT9qCiO1Q_a7Cqu/pub" target="_blank" rel="noopener">CV</a>
+          <a class="navbar-item" href="{{ '/media-kit/' | relative_url }}">At a glance</a>
+          <a class="navbar-item" href="https://docs.google.com/document/d/12FRzF6RheXEIQW8Ol5iNQBj0bAOZiMUPOzvH2NQX0Co/" target="_blank" rel="noopener">CV</a>
+          <!-- <a class="navbar-item" href="#tutorials">Tutorials</a> -->
+          <!-- <a class="navbar-item" href="https://srijitseal.com/cheminformaticsmeeting">Meetings</a> -->
+
+
         </div>
       </div>
     </div>
@@ -134,21 +139,20 @@ layout: null
     <div class="hero-body container is-max-widescreen">
       <div class="hero-layout">
         <div class="hero-copy">
-          <p class="eyebrow">AI for drug discovery and cellular profiling</p>
-          <h1 class="title hero-title">Srijit Seal</h1>
+          <p class="eyebrow">Cancer Immunology and Cell Circuits</p>
+          <h1 class="title hero-title">Mohammed Mutaher</h1>
           <p class="hero-subtitle">
-            Principal Scientist at Human Chemical Company and Visiting Researcher at Uppsala University.
+            Graduate student and researcher at Memorial Sloan Kettering Cancer Center
           </p>
           <div class="content hero-description">
             {{ site.description | markdownify }}
           </div>
 
           <div class="research-chips" aria-label="Research focus areas">
-            <span>AI for Science</span>
-            <span>Cell Painting</span>
-            <span>Bioactivity Modeling</span>
-            <span>Cheminformatics</span>
-            <span>Drug Discovery</span>
+            <span>Cancer biology</span>
+            <span>Immunology</span>
+            <span>CRISPR screens</span>
+            <span>Notch signaling</span>
           </div>
 
           {% assign live_stats = site.data.live_stats %}
@@ -177,6 +181,8 @@ layout: null
               <span class="icon"><i class="fas fa-file-alt"></i></span>
               <span>Publications</span>
             </a>
+
+            <!--
             <a class="button is-light" href="#talks">
               <span class="icon"><i class="fas fa-microphone"></i></span>
               <span>Talks</span>
@@ -185,12 +191,16 @@ layout: null
               <span class="icon"><i class="fas fa-laptop-code"></i></span>
               <span>Tutorials</span>
             </a>
+          -->
+
             <a class="button is-linkedin" href="{{ site.linkedin_url }}" target="_blank" rel="noopener">
               <span class="icon"><i class="fab fa-linkedin"></i></span>
               <span>Follow on LinkedIn</span>
             </a>
           </div>
         </div>
+
+<!-- PICK UP HERE -->
 
         <aside class="profile-panel" aria-label="Profile links and research signal">
           <div class="profile-card">
