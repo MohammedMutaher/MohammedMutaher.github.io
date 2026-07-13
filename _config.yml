@@ -18,27 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Srijit Seal
-name: Srijit Seal
-position: Principal Scientist, Human Chemical Company and Visiting Researcher, Uppsala University
-email: srijit.seal@uu.se
+title: Mohammed Mutaher
+name: Mohammed Mutaher
+position: Graduate Student, Cancer Immunology Researcher, Memorial Sloan Kettering Cancer Center
+email: mutaherm@mskcc.org
 description: >-
-  I am a researcher in chemoinformatics and computational biology, centered on using machine learning and Cell Painting to study small-molecule bioactivity, image-based profiling, and drug discovery.
+  I am an aspiring scientist working at the intersection of cancer biology and immunology.
   <br>
-  I am Principal Scientist at Human Chemical Company and Visiting Researcher at [Uppsala University](https://www.uu.se/en). Previously, I was Senior Scientist at [Merck US](https://www.merck.com/) and completed my postdoc at the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org) where I was advised by
-  [Anne Carpenter](https://www.broadinstitute.org/bios/anne-e-carpenter) and [Shantanu Singh](https://www.broadinstitute.org/bios/shantanu-singh). 
-  <br>
-  I obtained my PhD from the [University of Cambridge](https://www.cam.ac.uk/) where I was advised by
-  [Andreas Bender](https://www.ch.cam.ac.uk/person/ab454).
-  I also serve on the Board of Directors at the [American Society for Cellular and Computational Toxicology](https://www.ascctox.org/) and the Editorial Board of the [Journal of Cheminformatics](https://link.springer.com/journal/13321).
+  I am currently a graduate student in the Cancer Biology PhD program at the [Gerstner Sloan Kettering Graduate School of Biomedical Sciences](https://www.sloankettering.edu/gerstner). My thesis work is in the lab of [Ivan Maillard](https://www.mskcc.org/research-areas/labs/ivan-maillard) where I am studying the role of Notch signaling in anti-cancer immunity and immunobiology of lymph node fibroblastic reticular cells. 
+  Previously, I was a research associate at the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org) in the lab of [Nir Hacohen](https://hacohenlab.mgh.harvard.edu/) where I worked on several collaborative and interdisciplinary projects studying naive CD8 T cell differentiation in tumors.
   
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://srijitseal.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: srijitseal
-github_username: srijitseal
-linkedin_url: https://www.linkedin.com/in/srijitseal
-google_scholar: 0WxbtaAAAAAJ
-google_analytics: G-8Z8BB08Y56
+url: "https://mohammedmutaher.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: mohammedmutaher
+linkedin_url: https://www.linkedin.com/in/mohammed-mutaher-80b87218a/
+google_scholar: 397BkIgAAAAJ
+# twitter_username: srijitseal
+# google_analytics: G-8Z8BB08Y56
 
 # Build settings
 theme: minima
