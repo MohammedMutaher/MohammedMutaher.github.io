@@ -1,6 +1,6 @@
-# srijitseal.github.io
+# mohammedmutaher.github.io
 
-Personal website for https://srijitseal.com, hosted with GitHub Pages from this repository.
+Personal website for https://mohammedmutaher.github.io, hosted with GitHub Pages from this repository.
 
 The original template comes from https://github.com/keunhong/keunhong.github.io.
 

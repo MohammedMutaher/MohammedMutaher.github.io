@@ -21,7 +21,7 @@
 title: Mohammed Mutaher
 name: Mohammed Mutaher
 position: Graduate Student, Cancer Immunology Researcher, Memorial Sloan Kettering Cancer Center
-email: mutaherm@mskcc.org
+email: mutaherm@sloankettering.edu
 description: >-
   I am an aspiring scientist working at the intersection of cancer biology and immunology.
   <br>
@@ -33,8 +33,8 @@ url: "https://mohammedmutaher.github.io/" # the base hostname & protocol for you
 github_username: mohammedmutaher
 linkedin_url: https://www.linkedin.com/in/mohammed-mutaher-80b87218a/
 google_scholar: 397BkIgAAAAJ
+google_analytics: G-8Z8BB08Y56
 # twitter_username: srijitseal
-# google_analytics: G-8Z8BB08Y56
 
 # Build settings
 theme: minima
