@@ -6,8 +6,8 @@ permalink: /media-kit/
 <html lang="en-US">
 
 <head>
-  {% assign seo_description = "Media kit for Srijit Seal: bio, headshot, affiliations, speaking topics, and contact information." %}
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+  {% assign seo_description = "Media kit for Mohammed Mutaher: bio, headshot, affiliations, speaking topics, and contact information." %}
+  <link rel="shortcut icon" type="image/x-icon" href="/images/Pfp.png" />
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>Media Kit | {{ site.name }}</title>
@@ -18,25 +18,28 @@ permalink: /media-kit/
   <meta property="og:type" content="profile">
   <meta property="og:url" content="{{ site.url }}/media-kit/">
   <meta property="og:image" content="{{ site.url }}/images/portrait.jpg">
+  <!-- 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Media Kit | {{ site.name }}">
   <meta name="twitter:description" content="{{ seo_description }}">
   <meta name="twitter:image" content="{{ site.url }}/images/portrait.jpg">
+  -->
   <script type="application/ld+json">
+
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": {{ site.name | jsonify }},
     "url": {{ site.url | jsonify }},
     "image": {{ site.url | append: "/images/portrait.jpg" | jsonify }},
-    "jobTitle": "Principal Scientist",
+    "jobTitle": "Graduate student",
     "worksFor": {
       "@type": "Organization",
-      "name": "Human Chemical Company"
+      "name": "Memorial Sloan Kettering Cancer Center"
     },
     "affiliation": {
       "@type": "Organization",
-      "name": "Uppsala University"
+      "name": "Broad Institute of MIT and Harvard"
     },
     "sameAs": [
       "https://scholar.google.com/citations?user={{ site.google_scholar }}",
