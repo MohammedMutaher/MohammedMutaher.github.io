@@ -22,12 +22,6 @@ layout: null
   <meta property="og:type" content="profile">
   <meta property="og:url" content="{{ canonical_url }}">
   <meta property="og:image" content="{{ site.url }}/images/portrait.jpg">
-  <!-- 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ site.name }} | AI for drug discovery and cellular profiling">
-  <meta name="twitter:description" content="{{ seo_description }}">
-  <meta name="twitter:image" content="{{ site.url }}/images/portrait.jpg">
-  -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,17 +38,11 @@ layout: null
       {
         "@type": "Organization",
         "name": "Broad Institute of MIT and Harvard"
-      },
-      <!--
-      {
-        "@type": "Organization",
-        "name": "American Society for Cellular and Computational Toxicology"
       }
-      -->
     ],
     "sameAs": [
       "https://scholar.google.com/citations?user={{ site.google_scholar }}",
-      "https://github.com/{{ site.github_username }}",
+      "https://orcid.org/{{ site.orcid }}",
       {{ site.linkedin_url | jsonify }}
     ],
     "knowsAbout": [
@@ -72,7 +60,7 @@ layout: null
     "name": "Publications by Mohammed Mutaher",
     "itemListElement": [
       {% for publication in site.data.publications %}
-      {% assign publication_url = publication.OAlink | default: publication.Journal_notOA_link | default: publication.project_page %}
+      {% assign publication_url = "https://doi.org/" | append: publication.doi %}
       {
         "@type": "ListItem",
         "position": {{ forloop.index }},
@@ -110,32 +98,33 @@ layout: null
   <link href="{{ '/css/bulma.min.css' | relative_url }}" rel="stylesheet">
   <link href="{{ '/css/index.css' | relative_url }}" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script defer src="{{ '/js/fontawesome.all.min.js' | relative_url }}"></script>
-  <script src="{{ '/js/index.js' | relative_url }}"></script>
+  <script defer src="{{ '/js/index.js' | relative_url }}"></script>
 </head>
 
 <body>
-  <!-- Navigation bar -->
+  <!-- Navigation: one dropdown menu -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
-      <div id="navbarBasicExample" class="navbar-menu is-active is-centered">
-        <div class="navbar-start" style="margin: 0 auto;">
-          <a class="navbar-item" href="#work">Selected works</a>
-          <a class="navbar-item" href="#talks">Posters and presentations</a>
-          <a class="navbar-item" href="#publications">Publications</a>
-          <a class="navbar-item" href="{{ '/media-kit/' | relative_url }}">At a glance</a>
-          <a class="navbar-item" href="https://docs.google.com/document/d/12FRzF6RheXEIQW8Ol5iNQBj0bAOZiMUPOzvH2NQX0Co/" target="_blank" rel="noopener">CV</a>
-          <!-- <a class="navbar-item" href="#tutorials">Tutorials</a> -->
-          <!-- <a class="navbar-item" href="https://srijitseal.com/cheminformaticsmeeting">Meetings</a> -->
-
-
+      <div class="navbar-menu is-active">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown nav-dropdown" data-nav-dropdown>
+            <a class="navbar-link" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false" data-nav-toggle>Menu</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="#about">About me</a>
+              <a class="navbar-item" href="#work">Selected works</a>
+              <a class="navbar-item" href="#publications">Publications</a>
+              <a class="navbar-item" href="#posters">Posters and presentations</a>
+              <a class="navbar-item" href="#news">Recent news</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <section class="hero profile-hero">
+  <!-- ABOUT ME / title card -->
+  <section class="hero profile-hero" id="about">
     <div class="hero-body container is-max-widescreen">
       <div class="hero-layout">
         <div class="hero-copy">
@@ -157,19 +146,19 @@ layout: null
 
           {% assign live_stats = site.data.live_stats %}
           {% if live_stats %}
-          <div class="live-snapshot" aria-label="Live research snapshot">
+          <div class="live-snapshot" aria-label="Research snapshot">
+            {% if live_stats.publications %}
             <span class="live-stat">
-              <strong>{{ live_stats.publications.display | default: live_stats.publications.value }}</strong>
+              <strong>{{ live_stats.publications.display }}</strong>
               <span>{{ live_stats.publications.label }}</span>
             </span>
-            <span class="live-stat" title="Citation count from {{ live_stats.citations.source }}">
-              <strong>{{ live_stats.citations.display | default: live_stats.citations.value }}</strong>
+            {% endif %}
+            {% if live_stats.citations %}
+            <span class="live-stat">
+              <strong>{{ live_stats.citations.display }}</strong>
               <span>{{ live_stats.citations.label }}</span>
             </span>
-            <span class="live-stat" title="Total public repository stars from {{ live_stats.github_stars.source }}">
-              <strong>{{ live_stats.github_stars.display | default: live_stats.github_stars.value }}</strong>
-              <span>{{ live_stats.github_stars.label }}</span>
-            </span>
+            {% endif %}
             {% if live_stats.updated_label %}
             <span class="live-stat live-updated">Updated {{ live_stats.updated_label }}</span>
             {% endif %}
@@ -181,18 +170,6 @@ layout: null
               <span class="icon"><i class="fas fa-file-alt"></i></span>
               <span>Publications</span>
             </a>
-
-            <!--
-            <a class="button is-light" href="#talks">
-              <span class="icon"><i class="fas fa-microphone"></i></span>
-              <span>Talks</span>
-            </a>
-            <a class="button is-light" href="#tutorials">
-              <span class="icon"><i class="fas fa-laptop-code"></i></span>
-              <span>Tutorials</span>
-            </a>
-          -->
-
             <a class="button is-linkedin" href="{{ site.linkedin_url }}" target="_blank" rel="noopener">
               <span class="icon"><i class="fab fa-linkedin"></i></span>
               <span>Follow on LinkedIn</span>
@@ -200,7 +177,7 @@ layout: null
           </div>
         </div>
 
-        <aside class="profile-panel" aria-label="Profile links and research signal">
+        <aside class="profile-panel" aria-label="Profile links">
           <div class="profile-card">
             <div class="portrait">
               <img src="{{ '/images/portrait.jpg' | relative_url }}" alt="A portrait of Mohammed Mutaher" />
@@ -208,7 +185,7 @@ layout: null
             <div class="profile-details">
               <p>New York City, NY</p>
               <p>Harvard University, BA · Gerstner Sloan Kettering, PhD candidate</p>
-              <p> <a href="mailto:mutaherm@sloankettering.edu">mutaherm@sloankettering.edu</a></p>
+              <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
             </div>
           </div>
 
@@ -218,9 +195,9 @@ layout: null
               <span class="icon"><i class="ai ai-google-scholar"></i></span>
               <span>Scholar</span>
             </a>
-            <a class="external-link button is-light" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
-              <span class="icon"><i class="fab fa-github"></i></span>
-              <span>GitHub</span>
+            <a class="external-link button is-light" href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener">
+              <span class="icon"><i class="ai ai-orcid"></i></span>
+              <span>ORCID</span>
             </a>
             <a class="external-link button is-light" href="https://www.mskcc.org/research-areas/labs/members/mohammed-mutaher" target="_blank" rel="noopener">
               <span class="icon"><i class="fas fa-university"></i></span>
@@ -233,14 +210,10 @@ layout: null
           </div>
         </aside>
       </div>
-
     </div>
   </section>
 
-
-<!-- PICK UP HERE -->
-
-
+  <!-- SELECTED WORK: every paper in publications.yml marked "featured: true" -->
   <section class="section section-band" id="work">
     <div class="container is-max-widescreen">
       <div class="section-heading">
@@ -249,77 +222,22 @@ layout: null
       </div>
 
       <div class="featured-grid">
-        {% assign featured_ids = "small_molecule_bioactivity|cell_painting_hepatocytes|PKSmart|ML_toxicity_pillars" | split: "|" %}
-        {% for featured_id in featured_ids %}
-        {% assign featured_publications = site.data.publications | where: "id", featured_id %}
-        {% assign publication = featured_publications | first %}
-        {% if publication %}
-        {% assign publication_url = publication.OAlink | default: publication.project_page | default: publication.Journal_notOA_link %}
+        {% assign featured_publications = site.data.publications | where: "featured", true %}
+        {% for publication in featured_publications %}
         <article class="featured-card">
           <div class="featured-image">
-            <img src="./images/{{ publication.image }}" alt="{{ publication.title }}" loading="lazy" />
+            {% if publication.image and publication.image != "" %}
+            <img src="{{ '/images/' | append: publication.image | relative_url }}" alt="{{ publication.title | escape }}" loading="lazy" />
+            {% else %}
+            <div class="image-placeholder"><i class="fas fa-flask"></i></div>
+            {% endif %}
           </div>
           <div class="featured-content">
             <span class="venue-badge">{{ publication.venue }}</span>
             <h3>{{ publication.title }}</h3>
-            {% if publication_url %}
-            <a href="{{ publication_url }}" target="_blank" rel="noopener">Read paper</a>
+            {% if publication.doi %}
+            <a href="https://doi.org/{{ publication.doi }}" target="_blank" rel="noopener">Read paper</a>
             {% endif %}
-          </div>
-        </article>
-        {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="talks">
-    <div class="container is-max-widescreen">
-      <div class="section-heading">
-        <p class="eyebrow">Speaking</p>
-        <h2 class="title is-3">Talks & Workshops</h2>
-      </div>
-
-      <div class="filter-bar" role="group" aria-label="Filter talks">
-        <button class="filter-button is-active" type="button" data-talk-filter="all" aria-pressed="true">All</button>
-        <button class="filter-button" type="button" data-talk-filter="upcoming" aria-pressed="false">Upcoming</button>
-        <button class="filter-button" type="button" data-talk-filter="completed" aria-pressed="false">Completed</button>
-        <button class="filter-button" type="button" data-talk-filter="2026" aria-pressed="false">2026</button>
-        <button class="filter-button" type="button" data-talk-filter="2025" aria-pressed="false">2025</button>
-        <button class="filter-button" type="button" data-talk-filter="conference" aria-pressed="false">Conference</button>
-        <button class="filter-button" type="button" data-talk-filter="workshop" aria-pressed="false">Workshop</button>
-        <button class="filter-button" type="button" data-talk-filter="webinar" aria-pressed="false">Webinar</button>
-      </div>
-      <p class="filter-empty" data-talk-empty hidden>No talks match this filter.</p>
-
-      <div class="talk-timeline">
-        {% for talk in site.data.upcoming_talks %}
-        {% assign talk_url = talk.venue_url | default: talk.website %}
-        {% assign talk_date_parts = talk.date | split: " " %}
-        {% assign talk_year = talk_date_parts | last %}
-        {% assign talk_title_lc = talk.title | downcase %}
-        {% assign talk_venue_lc = talk.venue | downcase %}
-        {% assign talk_location_lc = talk.location | downcase %}
-        {% assign talk_kind = "conference" %}
-        {% if talk_venue_lc contains "webinar" or talk_title_lc contains "webinar" or talk_location_lc contains "online" %}
-        {% assign talk_kind = "webinar" %}
-        {% elsif talk_venue_lc contains "workshop" or talk_title_lc contains "workshop" or talk_venue_lc contains "course" or talk_title_lc contains "course" or talk_venue_lc contains "summer immersion" %}
-        {% assign talk_kind = "workshop" %}
-        {% endif %}
-        {% assign talk_status = "upcoming" %}
-        {% if talk.status == 'Completed' %}
-        {% assign talk_status = "completed" %}
-        {% endif %}
-        <article class="talk-item {% if talk_status == 'completed' %}is-completed{% endif %}" data-talk data-date="{{ talk.date }}" data-status="{{ talk_status }}" data-explicit-status="{% if talk.status %}{{ talk_status }}{% endif %}" data-year="{{ talk_year }}" data-kind="{{ talk_kind }}">
-          <div class="talk-date">{{ talk.date }}</div>
-          <div class="talk-content">
-            {% if talk_url %}
-            <h3><a href="{{ talk_url }}" target="_blank" rel="noopener">{{ talk.venue }}</a></h3>
-            {% else %}
-            <h3>{{ talk.venue }}</h3>
-            {% endif %}
-            <p>{{ talk.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-            <span>{{ talk.location }}</span>
           </div>
         </article>
         {% endfor %}
@@ -327,42 +245,7 @@ layout: null
     </div>
   </section>
 
-  <section class="section section-band" id="tutorials">
-    <div class="container is-max-widescreen">
-      <div class="section-heading">
-        <p class="eyebrow">Featured tools</p>
-        <h2 class="title is-3">Tools & Tutorials</h2>
-      </div>
-
-      <div class="tutorial-grid">
-        <article class="resource-card">
-          <span class="resource-kicker">Tool</span>
-          <h3>PKSmart</h3>
-          <p>Open-source pharmacokinetic modeling for small-molecule discovery workflows.</p>
-          <a href="https://broad.io/PKSmart" target="_blank" rel="noopener">Open PKSmart</a>
-        </article>
-        <article class="resource-card">
-          <span class="resource-kicker">Course</span>
-          <h3>Introduction to Cheminformatics and AI in Drug Discovery</h3>
-          <p>Hands-on modeling workflows, predictive ML, and AI-assisted cheminformatics.</p>
-          <a href="https://srijitseal.com/AIDDCourse" target="_blank" rel="noopener">Open course</a>
-        </article>
-        <article class="resource-card">
-          <span class="resource-kicker">Tutorial</span>
-          <h3>Leveraging Cell Painting Morphological Profiles for Machine Learning–Driven Bioactivity Prediction</h3>
-          <p>Practical workflow for turning morphology profiles into bioactivity prediction features.</p>
-          <a href="http://broad.io/cpsot" target="_blank" rel="noopener">Open tutorial</a>
-        </article>
-        <article class="resource-card">
-          <span class="resource-kicker">Utilities</span>
-          <h3>Drug Discovery and Toxicology Utilities</h3>
-          <p>Small, reusable tools for cheminformatics, Cell Painting, and reproducible research workflows.</p>
-          <a href="https://srijitseal.com/tools" target="_blank" rel="noopener">Browse tools</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
+  <!-- PUBLICATIONS -->
   <section class="section" id="publications">
     <div class="container is-max-widescreen">
       <div class="section-heading">
@@ -372,34 +255,53 @@ layout: null
 
       <div class="filter-bar" role="group" aria-label="Filter publications by topic">
         <button class="filter-button is-active" type="button" data-publication-filter="all" aria-pressed="true">All</button>
-        <button class="filter-button" type="button" data-publication-filter="cell-painting" aria-pressed="false">Cell Painting</button>
-        <button class="filter-button" type="button" data-publication-filter="cheminformatics" aria-pressed="false">Cheminformatics</button>
-        <button class="filter-button" type="button" data-publication-filter="drug-discovery" aria-pressed="false">Drug Discovery</button>
-        <button class="filter-button" type="button" data-publication-filter="toxicology" aria-pressed="false">Toxicology</button>
-        <button class="filter-button" type="button" data-publication-filter="ai-ml" aria-pressed="false">AI/ML</button>
-        <button class="filter-button" type="button" data-publication-filter="reviews" aria-pressed="false">Reviews</button>
-        <button class="filter-button" type="button" data-publication-filter="tools" aria-pressed="false">Tools</button>
+        <button class="filter-button" type="button" data-publication-filter="crispr-screens" aria-pressed="false">CRISPR screens</button>
+        <button class="filter-button" type="button" data-publication-filter="notch-signaling" aria-pressed="false">Notch signaling</button>
+        <button class="filter-button" type="button" data-publication-filter="metabolism" aria-pressed="false">Metabolism</button>
+        <button class="filter-button" type="button" data-publication-filter="cell-labeling" aria-pressed="false">Cell labeling</button>
       </div>
-      <p class="filter-empty" data-publication-empty hidden>No publications match this filter.</p>
+      <p class="filter-empty" data-publication-empty hidden>No publications match this filter yet.</p>
 
       {% for publication in site.data.publications %}
-      {% if forloop.index <= 12 %}
       {% include publication.html %}
-      {% endif %}
       {% endfor %}
-
-      <details class="earlier-publications">
-        <summary>Earlier Publications</summary>
-        {% for publication in site.data.publications %}
-        {% if forloop.index > 12 %}
-        {% include publication.html %}
-        {% endif %}
-        {% endfor %}
-      </details>
     </div>
   </section>
 
-  <section class="section section-band" id="news">
+  <!-- POSTERS AND PRESENTATIONS -->
+  <section class="section section-band" id="posters">
+    <div class="container is-max-widescreen">
+      <div class="section-heading">
+        <p class="eyebrow">Presentations</p>
+        <h2 class="title is-3">Posters and Presentations</h2>
+      </div>
+
+      <div class="poster-list">
+        {% for poster in site.data.posters %}
+        <article class="poster-item">
+          <h3 class="poster-title">{{ poster.title }}</h3>
+          {% if poster.authors and poster.authors != "" %}
+          <p class="poster-authors">{{ poster.authors | replace: "Mohammed Mutaher", "<strong>Mohammed Mutaher</strong>" }}</p>
+          {% endif %}
+          <p class="poster-event">
+            {% if poster.url and poster.url != "" %}<a href="{{ poster.url }}" target="_blank" rel="noopener">{{ poster.event }}</a>{% else %}{{ poster.event }}{% endif %}.
+            {{ poster.location }}. {{ poster.date }}.
+          </p>
+          {% if poster.poster and poster.poster != "" %}
+          <div class="poster-links">
+            <a class="poster-icon" href="{{ poster.poster | relative_url }}" target="_blank" rel="noopener" title="View poster" aria-label="View poster for {{ poster.event | escape }}">
+              <i class="fas fa-image"></i>
+            </a>
+          </div>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="section" id="news">
     <div class="container is-max-widescreen">
       <div class="section-heading">
         <p class="eyebrow">Updates</p>
@@ -420,36 +322,28 @@ layout: null
   <footer class="footer">
     <div class="container">
       <div class="content footer-links has-text-centered">
-        <a href="mailto:{{ site.email }}">
+        <a href="mailto:{{ site.email }}" aria-label="Email">
           <i class="fas fa-envelope"></i>
         </a>
-        <a class="external-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
+        <a class="external-link" href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener" aria-label="ORCID">
+          <i class="ai ai-orcid"></i>
         </a>
-        <a class="external-link" href="{{ site.linkedin_url }}" target="_blank" rel="noopener">
+        <a class="external-link" href="{{ site.linkedin_url }}" target="_blank" rel="noopener" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener">
+        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar">
           <i class="ai ai-google-scholar"></i>
         </a>
       </div>
       <div class="columns is-centered has-text-centered">
         <div class="column is-8">
           <div class="content">
-            <p>
-              Srijit Seal · AI for drug discovery, cheminformatics, and cellular profiling.
-            </p>
+            <p>Mohammed Mutaher · Cancer immunology and Notch signaling.</p>
           </div>
         </div>
       </div>
     </div>
   </footer>
-
-  <a class="meeting-float" href="https://srijitseal.com/calendly" target="_blank" rel="noopener">
-    <span class="icon"><i class="fas fa-calendar-alt"></i></span>
-    <span>Book a meeting</span>
-  </a>
-
 </body>
 
 </html>

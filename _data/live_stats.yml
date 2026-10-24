@@ -1,16 +1,12 @@
+# Numbers shown in the title card. Edit by hand when they change.
 publications:
-  value: 20
-  display: "20"
+  display: "4"
   label: "Publications"
-citations:
-  value: 703
-  display: "703"
-  label: "Citations"
-  source: "OpenAlex"
-github_stars:
-  value: 140
-  display: "140"
-  label: "GitHub stars"
-  source: "GitHub"
-updated_at: "2026-07-06"
-updated_label: "Jul 6, 2026"
+
+# To show a citation count, delete the "#" at the start of the next 3 lines
+# and type your real number (check Google Scholar).
+# citations:
+#   display: "0"
+#   label: "Citations"
+
+updated_label: "Oct 24, 2026"

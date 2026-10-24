@@ -1,425 +1,58 @@
-- id: ai_agents_drug_discovery
-  title: "AI agents in drug discovery: applications and case studies"
-  venue: Drug Discovery Today, 2026
-  OAlink: https://www.sciencedirect.com/science/article/pii/S1359644626000553
-  image: ai_agents_drug_discovery.jpg
-  tags:
-    - ai-ml
-    - drug-discovery
-  authors:
-    - huynh
-    - srijit
-    - dylan_reid
-    - carpenter
-    - bender
-    - spjuth
-    - aia4s
+# ---------------------------------------------------------------
+# PUBLICATIONS  (newest first)
+#
+# To add a paper, copy one block below and edit it. Fields:
+#   id         short unique name, no spaces
+#   title      paper title
+#   venue      journal / preprint server + year
+#   doi        just the DOI, e.g. 10.1038/xxxx  (builds the "Paper" button)
+#   tags       any of: crispr-screens, notch-signaling, metabolism, cell-labeling
+#   featured   true = also shown in the "Selected Work" cards near the top
+#   image      (optional) file name of a figure you put in the /images folder
+#   equal_contribution   true = adds a "* Equal contribution" note
+#   authors    paste the author list straight from the paper, as one line.
+#              "Mohammed Mutaher" is bolded automatically.
+# ---------------------------------------------------------------
 
-- id: transfer_learning_eskape
-  title: "Transfer learning enables discovery of sub-micromolar antibacterials for ESKAPE pathogens from ultra-large chemical spaces"
-  venue: Chemical Science, 2025
-  OAlink: https://pubs.rsc.org/en/content/articlelanding/2025/sc/d5sc03055b
-  image: transfer_learning_antibacterials.gif
+- id: folate_glycosylation
+  title: "One-carbon metabolism sustains effector T cell function through cell-surface glycosylation"
+  venue: bioRxiv (preprint), 2026
+  doi: 10.64898/2026.10.06.756889
+  featured: true
+  image: ""
   tags:
-    - ai-ml
-    - cheminformatics
-    - drug-discovery
-  authors:
-    - garcia_ortegon
-    - srijit
-    - geddes
-    - littler
-    - guy
-    - whiteside
-    - rasmussen
-    - bender
-    - bacallado
+    - metabolism
+    - crispr-screens
+  authors: "Peng Wang, Amy Yu, Mohammed Mutaher, Almut S. Eisele, Sarah Mouche, Kaitlyn Hung, Reece C. Larson, Madeline Gish, Margaret Zimmer, Jeanette R. Brook, Miriam McNerney, Lea Hammer, Arjun Garg, Efrat Ozeri, Alan Y. L. Wong, Boryana Petrova, Michal Weitman, Ramon C. Sun, Jerome Tamburini, Mathias Wenes, Marc Schwartz, Nir Hacohen, Naama Kanarek"
 
-- id: infoalign
-  title: "Learning Molecular Representation in a Cell"
-  venue: ICLR, 2025
-  project_page: https://iclr.cc/virtual/2025/poster/30563
-  OAlink: https://openreview.net/forum?id=BbZy8nI1si
-  image: infoalign.png
-  github: liugangcode/InfoAlign
-  arxiv: "2406.12056"
+- id: tcf7_trim28
+  title: "Discovery of Tcf7 regulators with clonally-resolved CRISPR screens identifies Trim28 as a mediator of CD8 T cell differentiation in tumors"
+  venue: bioRxiv (preprint), 2026
+  doi: 10.64898/2026.06.14.732162
+  featured: true
+  image: ""
+  equal_contribution: true
   tags:
-    - ai-ml
-    - cell-painting
-    - drug-discovery
-  authors:
-    - gang_liu
-    - srijit
-    - arevalo
-    - zhenwen_liang
-    - carpenter
-    - meng_jiang
-    - singh
+    - crispr-screens
+  authors: "Marc A. Schwartz*, Dillon Lue*, Mohammed Mutaher*, Miriam McNerney, Oluwatomisin Olajide, Arnav Mehta, Jared H. Rowe, Ryan J. Park, Mohsen Malehmir, Juan Dubrot, Aziz M. Al’Khafaji, Matthew Bakalar, Lynn Bi, Martin W. LaFleur, Kathleen B. Yates, Robert T. Manguso, John G. Doench, Arlene H. Sharpe, Yuri Pritykin, Nir Hacohen"
 
-- id: Progress_image_profiling
-  title: "Progress and new challenges in image-based profiling"
-  venue: Molecular Systems Biology, 2026
-  OAlink: https://link.springer.com/article/10.1038/s44320-026-00197-7
-  arxiv: "2508.05800"
-  image: progress.png
+- id: ml_challenge
+  title: "A community machine learning challenge to predict the effects of gene perturbations on T cell differentiation for cancer immunotherapy"
+  venue: bioRxiv (preprint), 2026
+  doi: 10.64898/2026.05.21.726863
+  featured: true
+  image: ""
   tags:
-    - cell-painting
-    - reviews
-  authors:
-    - serrano
-    - peters
-    - wagner
-    - graham
-    - chen
-    - feng
-    - miranda
-    - kalinin
-    - vulliard
-    - tomkinson
-    - cameron_mattson
-    - lippincott
-    - kang
-    - sitani
-    - bunten
-    - srijit
-    - carragher
-    - carpenter
-    - singh
-    - marin_zapata
-    - caicedo
-    - way
+    - crispr-screens
+  authors: "Jiaqi Zhang, Marc A. Schwartz, Mohammed Mutaher, Oluwatomisin Olajide, Yuri Pritykin, Orr Ashenberg, Nir Hacohen, Caroline Uhler"
 
-- id: ML_toxicity_pillars
-  title: "Machine Learning for Toxicity Prediction Using Chemical Structures: Pillars for Success in the Real World"
-  venue: Chemical Research in Toxicology, 2025
-  OAlink: https://pubs.acs.org/doi/10.1021/acs.chemrestox.5c00033
-  image: giant.png
+- id: biotin_ligase
+  title: "An affinity reagent-conjugated biotin ligase for amplified cell surface labelling in vitro and in vivo"
+  venue: Scientific Reports, 2026
+  doi: 10.1038/s41598-026-46452-7
+  featured: true
+  image: ""
+  equal_contribution: true
   tags:
-    - ai-ml
-    - cheminformatics
-    - toxicology
-    - reviews
-  authors:
-    - srijit
-    - mahale
-    - garcia_ortegon
-    - joshi
-    - hosseini_gerami
-    - beatson
-    - greenig
-    - shekhar
-    - patra
-    - weis
-    - mehrjou
-    - badre
-    - paisley
-    - lowe
-    - singh
-    - fshah
-    - johannesson
-    - williams
-    - rouquie
-    - clevert
-    - schwab
-    - richmond
-    - nicolaou
-    - gonzalez_r
-    - bender
-
-- id: small_molecule_bioactivity
-  title: "Counting cells can accurately predict small-molecule bioactivity benchmarks"
-  venue: Nature Communications, 2026
-  OAlink: https://www.nature.com/articles/s41467-026-68725-5
-  biorxiv: 10.1101/2025.04.27.650853v1
-  image: cellcount.png
-  tags:
-    - cell-painting
-    - drug-discovery
-  authors:
-    - srijit
-    - dee
-    - shah
-    - cerisier
-    - zhang
-    - miglietta
-    - titterton
-    - cabrera
-    - boiko
-    - beatson
-    - slabaugh
-    - taboureau
-    - carreras_puigvert
-    - singh
-    - spjuth
-    - bender
-    - carpenter
-
-- id: cell_painting_hepatocytes
-  title: "Cell Painting for cytotoxicity and mode-of-action analysis in primary human hepatocytes"
-  venue: Cell Systems, 2026
-  OAlink: https://www.sciencedirect.com/science/article/pii/S2405471226000487
-  biorxiv: 10.1101/2025.01.22.634152v1
-  image: cell_painting_hepatocytes.jpg
-  tags:
-    - cell-painting
-    - drug-discovery
-    - toxicology
-  authors:
-    - ewald
-    - titterton
-    - bauerle
-    - beatson
-    - boiko
-    - cabrera
-    - cheah
-    - cimini
-    - gorissen
-    - harrill
-    - thouis_jones
-    - karczewski
-    - crute
-    - rouquie
-    - srijit
-    - weisbart
-    - white
-    - carpenter
-    - singh
-    
-- id: Advice
-  title: "Advice for Bad Computational Toxicologists"
-  venue: NAM Journal, 2025
-  OAlink: https://srijitseal.com/pdf_publications/Advice_Bad_Computational_Toxicologists_v3.pdf
-  image: advicebad.png
-  tags:
-    - toxicology
-    - reviews
-  authors:
-    - srijit
-    - hartung
-
-- id: CPReview
-  title: "Cell Painting: a decade of discovery and innovation in cellular imaging"
-  venue: Nature Methods, 2024
-  Journal_notOA_link: https://www.nature.com/articles/s41592-024-02528-8
-  OAlink: https://rdcu.be/d2vHH
-  image: CPReview.png
-  tags:
-    - cell-painting
-    - reviews
-  authors:
-    - srijit
-    - trapotsi
-    - spjuth
-    - carreras_puigvert
-    - greene
-    - singh
-    - bender
-    - carpenter
-  
-- id: DICTrank
-  title: "Insights into Drug Cardiotoxicity from Biological and Chemical Data: The First Public Classifiers for FDA Drug-Induced Cardiotoxicity Rank"
-  venue: Journal of Chemical Information and Modeling, 2024
-  project_page: https://broad.io/DICTrank_Predictor
-  OAlink: https://pubs.acs.org/doi/10.1021/acs.jcim.3c01834
-  image: DICTrank.png
-  github: srijitseal/DICTrank
-  tags:
-    - cheminformatics
-    - drug-discovery
-    - toxicology
-    - tools
-  #image_mouseover: reconfusion_after.mp4
-  authors:
-    - srijit
-    - spjuth
-    - hosseini_gerami
-    - garcia_ortegon
-    - singh
-    - bender
-    - carpenter
-
-
-- id: mitochondrial_toxicity_detection
-  title: Integrating Cell Morphology with Gene Expression and Chemical Structure to aid Mitochondrial Toxicity detection
-  venue: Communications Biology, 2022
-  OAlink: "https://www.nature.com/articles/s42003-022-03763-5"
-  image: mitochondrial_toxicity_detection.webp
-  tags:
-    - cell-painting
-    - cheminformatics
-    - toxicology
-  authors:
-    - srijit
-    - carreras_puigvert
-    - trapotsi
-    - yang
-    - spjuth
-    - bender
-
-- id: cytotoxicity_prediction
-  title: "Comparison of Cellular Morphological descriptors and Molecular Fingerprints for the prediction of Cytotoxicity- and Proliferation-related assays"
-  venue: Chemical Research in Toxicology, 2021
-  project_page: "https://www.repository.cam.ac.uk/items/00cc61cf-671b-4398-8691-a3905389dc81"
-  pdf_link: "https://www.repository.cam.ac.uk/bitstreams/a2e4aec2-65c8-4426-8ebc-d6cecf676473/download"
-  Journal_notOA_link: https://pubs.acs.org/doi/10.1021/acs.chemrestox.0c00303
-  image: cytotoxicity_prediction.webp
-  tags:
-    - cell-painting
-    - cheminformatics
-    - toxicology
-  authors:
-    - srijit
-    - yang
-    - vollmers
-    - bender
-
-- id: AI_in_biology
-  title: "Understanding Biology in the Age of Artificial Intelligence"
-  venue: arXiv, 2024
-  project_page: "https://understanding.bio"
-  image: AI_in_biology.png
-  arxiv: "2403.04106"
-  tags:
-    - ai-ml
-    - reviews
-  authors:
-    - lawrence
-    - el_shazly
-    - srijit
-    - joshi
-    - lio
-    - singh
-    - bender
-    - sormanni
-    - greenig
-
-- id: drug_toxicity_prediction
-  title: Using Chemical and Biological data to Predict Drug Toxicity
-  venue: SLAS Discovery, 2023
-  OAlink: https://www.sciencedirect.com/science/article/pii/S2472555222137147
-  image: drug_toxicity_prediction.jpg
-  tags:
-    - cheminformatics
-    - drug-discovery
-    - toxicology
-  authors:
-    - liu
-    - srijit
-    - yang
-    - bender
-
-- id: bioactivity_predictions_merging
-  title: Merging Bioactivity Predictions from Cell Morphology and Chemical Fingerprint models using Similarity to Training data
-  venue: Journal of Cheminformatics, 2023
-  OAlink: "https://link.springer.com/article/10.1186/s13321-023-00723-x"
-  image: bioactivity_predictions_merging.webp
-  github: srijitseal/Merging_Bioactivity_Predictions_CellPainting_Chemical_Structure_Similarity
-  tags:
-    - cell-painting
-    - cheminformatics
-    - drug-discovery
-  authors:
-    - srijit
-    - yang
-    - trapotsi
-    - singh
-    - carreras_puigvert
-    - spjuth
-    - bender
-
-- id: pixels_to_phenotypes
-  title: "From pixels to phenotypes: Integrating image-based profiling with cell health data as BioMorph features improves interpretability"
-  venue: Molecular Biology of the Cell, 2024
-  project_page: https://broad.io/biomorph
-  OAlink: "https://www.molbiolcell.org/doi/full/10.1091/mbc.E23-08-0298"
-  image: pixels_to_phenotypes.svg
-  github: srijitseal/BioMorph
-  tags:
-    - cell-painting
-    - tools
-  authors:
-    - srijit
-    - carreras_puigvert
-    - singh
-    - carpenter
-    - spjuth
-    - bender
-
-- id: generative_modeling_potency
-  title: Using Generative Modeling to Endow with Potency Initially Inert Compounds with Good Bioavailability and Low Toxicity
-  venue: Journal of Chemical Information and Modeling, 2024
-  OAlink: https://pubs.acs.org/doi/full/10.1021/acs.jcim.3c01777
-  image: generative_modeling_potency.webp
-  github: Jaredwg2000/MolDQN_CNS
-  tags:
-    - ai-ml
-    - cheminformatics
-    - drug-discovery
-  authors:
-    - horne
-    - wilson_godber
-    - gonzalez_diaz
-    - brotzakis
-    - srijit
-    - gregory_r 
-    - possenti 
-    - chia
-    - vendruscolo
-
-- id: liver_injury_early_detection
-  title: "Improved Detection of Drug-Induced Liver Injury by Integrating Predicted In Vivo and In Vitro Data"
-  venue: Chemical Research in Toxicology, 2024
-  project_page: https://broad.io/DILIPredictor
-  OAlink: https://pubs.acs.org/doi/10.1021/acs.chemrestox.4c00015
-  image: liver_injury_early_detection.png
-  biorxiv: 10.1101/2024.01.10.575128v1.full
-  github: srijitseal/DILI
-  tags:
-    - cheminformatics
-    - toxicology
-    - tools
-  authors:
-    - srijit
-    - williams
-    - hosseini_gerami
-    - mahale
-    - carpenter
-    - spjuth
-    - bender
-
-- id: PKSmart
-  title: "PKSmart: an open-source computational model to predict intravenous pharmacokinetics of small molecules"
-  venue: Journal of Cheminformatics, 2025
-  project_page: https://broad.io/PKSmart
-  OAlink: https://link.springer.com/article/10.1186/s13321-025-01066-5
-  image: PKSmart.jpg
-  biorxiv: 10.1101/2024.02.02.578658v1.full
-  github: srijitseal/PKSmart
-  tags:
-    - cheminformatics
-    - drug-discovery
-    - tools
-  authors:
-    - srijit
-    - trapotsi
-    - mahale
-    - subramanian
-    - greene
-    - spjuth
-    - bender
-
-- id: CNS_sideeffect
-  title: "Calibrated prediction of scarce adverse drug reaction labels with conditional neural processes"
-  venue: ICLR 2024 DMLR Workshop
-  OAlink: https://srijitseal.com/pdf_publications/69_calibrated_prediction_of_scarc.pdf
-  image: CNS_sideeffects.png
-  tags:
-    - ai-ml
-    - cheminformatics
-    - toxicology
-  authors:
-    - garcia_ortegon
-    - srijit
-    - singh
-    - bender
-    - bacallado
+    - cell-labeling
+  authors: "Beck Holden*, Mohammed Mutaher*, Raktima Raychowdhury, Matt Bakalar, Abraham Lopez, Marc A. Schwartz, Esther Olajide, Marina Santos, Nir Hacohen"

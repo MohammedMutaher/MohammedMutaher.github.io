@@ -29,12 +29,11 @@ description: >-
   Previously, I was a research associate at the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org) in the lab of [Nir Hacohen](https://hacohenlab.mgh.harvard.edu/) where I worked on several collaborative and interdisciplinary projects studying naive CD8 T cell differentiation in tumors.
   
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mohammedmutaher.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: mohammedmutaher
+url: "https://mohammedmutaher.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+orcid: 0009-0001-4386-3792
 linkedin_url: https://www.linkedin.com/in/mohammed-mutaher-80b87218a/
 google_scholar: 397BkIgAAAAJ
 google_analytics: G-5R93SLML6H
-# twitter_username: srijitseal
 
 # Build settings
 theme: minima

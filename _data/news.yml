@@ -1,29 +1,32 @@
-- date: Mar 2026
+# NEWS  (newest first). Links use Markdown: [text](https://link)
+- date: Oct 2026
   description: >-
-    New papers are out in [Drug Discovery Today](https://www.sciencedirect.com/science/article/pii/S1359644626000553),
-    [Cell Painting in primary human hepatocytes](https://www.sciencedirect.com/science/article/pii/S2405471226000487),
-    and [progress and challenges in image-based profiling](https://link.springer.com/article/10.1038/s44320-026-00197-7).
+    Our preprint [One-carbon metabolism sustains effector T cell function through cell-surface glycosylation](https://doi.org/10.64898/2026.10.06.756889)
+    is posted on bioRxiv.
 
-- date: Feb 2026
+- date: Jun 2026
   description: >-
-    Our paper [Counting cells can accurately predict small-molecule bioactivity benchmarks](https://www.nature.com/articles/s41467-026-68725-5)
-    is published in Nature Communications.
+    Our preprint [Discovery of Tcf7 regulators with clonally-resolved CRISPR screens identifies Trim28 as a mediator of CD8 T cell differentiation in tumors](https://doi.org/10.64898/2026.06.14.732162)
+    is posted on bioRxiv.
 
-- date: Sep 2025
+- date: May 2026
   description: >-
-    [PKSmart](https://link.springer.com/article/10.1186/s13321-025-01066-5) is published in the Journal of Cheminformatics, and our
-    [transfer learning study for ESKAPE antibacterials](https://pubs.rsc.org/en/content/articlelanding/2025/sc/d5sc03055b)
-    is published in Chemical Science.
+    Our preprint [A community machine learning challenge to predict the effects of gene perturbations on T cell differentiation for cancer immunotherapy](https://doi.org/10.64898/2026.05.21.726863)
+    is posted on bioRxiv.
 
-- date: Jan 2025
+- date: Apr 2026
   description: >-
-    [pip install infoalign!](https://github.com/liugangcode/infoalign-package) Add biological information to your chemical fingerprints, using only SMILES as input!
-    Our paper Learning Molecular Representation in a Cell has been accepted to ICLR 2025!
-    We introduce InfoAlign, a new approach for learning molecular representations from cellular response data, integrating features like cell morphology and gene expression.
-    By combining information bottleneck methods with context graphs, we’re able to extract minimal yet sufficient representations of molecules that lead to better predictions and generalization in downstream tasks like molecular property prediction and zero-shot molecule-morphology matching.
+    I joined the [Maillard lab](https://www.mskcc.org/research-areas/labs/ivan-maillard) to work on Notch signaling in anti-cancer immunity.
 
-- date: Mar 2024
+- date: Apr 2026
   description: >-
-    [Calibrated prediction of scarce adverse drug reaction labels with conditional neural processes](https://dmlr.ai/)
-    has been accepted in DMLR at ICLR 2024. This work introduces a meta-learning approach with neural processes to significantly enhance the accuracy
-    and calibration of adverse drug reaction (ADR) classification.
+    Our paper [An affinity reagent-conjugated biotin ligase for amplified cell surface labelling in vitro and in vivo](https://doi.org/10.1038/s41598-026-46452-7)
+    is published in Scientific Reports.
+
+- date: Jul 2025
+  description: >-
+    I started the Cancer Biology PhD program at the [Gerstner Sloan Kettering Graduate School of Biomedical Sciences](https://www.sloankettering.edu/gerstner).
+
+- date: Dec 2022
+  description: >-
+    I graduated from Harvard University with a B.A. in Human Developmental and Regenerative Biology.
