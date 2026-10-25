@@ -60,7 +60,8 @@ layout: null
     "name": "Publications by Mohammed Mutaher",
     "itemListElement": [
       {% for publication in site.data.publications %}
-      {% assign publication_url = "https://doi.org/" | append: publication.doi %}
+      {% assign publication_doi = publication.doi | default: publication.biorxiv_doi %}
+      {% assign publication_url = "https://doi.org/" | append: publication_doi %}
       {
         "@type": "ListItem",
         "position": {{ forloop.index }},
@@ -69,7 +70,7 @@ layout: null
           "name": {{ publication.title | jsonify }},
           "isPartOf": {
             "@type": "Periodical",
-            "name": {{ publication.venue | jsonify }}
+            "name": {{ publication.venue | default: "bioRxiv" | jsonify }}
           },
           "url": {{ publication_url | jsonify }}
         }
@@ -233,11 +234,10 @@ layout: null
             {% endif %}
           </div>
           <div class="featured-content">
-            <span class="venue-badge">{{ publication.venue }}</span>
+            <span class="venue-badge">{% if publication.doi %}{{ publication.venue }}, {{ publication.year }}{% else %}bioRxiv (preprint), {{ publication.year }}{% endif %}</span>
             <h3>{{ publication.title }}</h3>
-            {% if publication.doi %}
-            <a href="https://doi.org/{{ publication.doi }}" target="_blank" rel="noopener">Read paper</a>
-            {% endif %}
+            {% assign read_doi = publication.doi | default: publication.biorxiv_doi %}
+            <a href="https://doi.org/{{ read_doi }}" target="_blank" rel="noopener">Read paper</a>
           </div>
         </article>
         {% endfor %}
@@ -277,23 +277,23 @@ layout: null
       </div>
 
       <div class="poster-list">
-        {% for poster in site.data.posters %}
+        {% for group in site.data.posters %}
         <article class="poster-item">
-          <h3 class="poster-title">{{ poster.title }}</h3>
-          {% if poster.authors and poster.authors != "" %}
-          <p class="poster-authors">{{ poster.authors | replace: "Mohammed Mutaher", "<strong>Mohammed Mutaher</strong>" }}</p>
+          <h3 class="poster-title">{{ group.title }}</h3>
+          {% if group.authors and group.authors != "" %}
+          <p class="poster-authors">{{ group.authors | replace: "Mohammed Mutaher", "<strong>Mohammed Mutaher</strong>" }}</p>
           {% endif %}
-          <p class="poster-event">
-            {% if poster.url and poster.url != "" %}<a href="{{ poster.url }}" target="_blank" rel="noopener">{{ poster.event }}</a>{% else %}{{ poster.event }}{% endif %}.
-            {{ poster.location }}. {{ poster.date }}.
-          </p>
-          {% if poster.poster and poster.poster != "" %}
-          <div class="poster-links">
-            <a class="poster-icon" href="{{ poster.poster | relative_url }}" target="_blank" rel="noopener" title="View poster" aria-label="View poster for {{ poster.event | escape }}">
-              <i class="fas fa-image"></i>
-            </a>
-          </div>
-          {% endif %}
+          <ul class="poster-venues">
+            {% for p in group.presentations %}
+            <li>
+              {% if p.url and p.url != "" %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.event }}</a>{% else %}{{ p.event }}{% endif %}.
+              {{ p.location }}. {{ p.date }}.
+              {% if p.poster and p.poster != "" %}
+              <a class="poster-icon" href="{{ p.poster | relative_url }}" target="_blank" rel="noopener" title="View poster" aria-label="View poster for {{ p.event | escape }}"><i class="fas fa-image"></i></a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
         </article>
         {% endfor %}
       </div>
@@ -308,11 +308,13 @@ layout: null
         <h2 class="title is-3">News</h2>
       </div>
 
-      <div class="news-list">
+      <div class="news-timeline">
         {% for news in site.data.news %}
         <article class="news-item">
-          <time>{{ news.date }}</time>
-          <p>{{ news.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          <div class="news-date">{{ news.date }}</div>
+          <div class="news-content">
+            <p>{{ news.description | markdownify | remove: '<p>' | remove: '</p>' | replace: '<a href=', '<a target="_blank" rel="noopener" href=' }}</p>
+          </div>
         </article>
         {% endfor %}
       </div>

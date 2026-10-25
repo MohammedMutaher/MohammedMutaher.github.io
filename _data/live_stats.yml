@@ -1,12 +1,6 @@
-# Numbers shown in the title card. Edit by hand when they change.
+# Written automatically by scripts/update_live_stats.py (weekly).
+# You can also edit these numbers by hand.
 publications:
   display: "4"
   label: "Publications"
-
-# To show a citation count, delete the "#" at the start of the next 3 lines
-# and type your real number (check Google Scholar).
-# citations:
-#   display: "0"
-#   label: "Citations"
-
 updated_label: "Oct 24, 2026"

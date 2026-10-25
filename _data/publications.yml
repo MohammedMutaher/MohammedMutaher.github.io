@@ -2,22 +2,28 @@
 # PUBLICATIONS  (newest first)
 #
 # To add a paper, copy one block below and edit it. Fields:
-#   id         short unique name, no spaces
-#   title      paper title
-#   venue      journal / preprint server + year
-#   doi        just the DOI, e.g. 10.1038/xxxx  (builds the "Paper" button)
-#   tags       any of: crispr-screens, notch-signaling, metabolism, cell-labeling
-#   featured   true = also shown in the "Selected Work" cards near the top
-#   image      (optional) file name of a figure you put in the /images folder
+#   id            short unique name, no spaces
+#   title         paper title
+#   year          publication year
+#   biorxiv_doi   DOI of the bioRxiv preprint (makes the "bioRxiv" button)
+#   doi           DOI of the PUBLISHED paper (makes the "Paper" button)
+#   venue         journal name -- only needed once published
+#   tags          any of: crispr-screens, notch-signaling, metabolism, cell-labeling
+#   featured      true = also shown in the "Selected Work" cards near the top
+#   image         (optional) file name of a figure you put in the /images folder
 #   equal_contribution   true = adds a "* Equal contribution" note
-#   authors    paste the author list straight from the paper, as one line.
-#              "Mohammed Mutaher" is bolded automatically.
+#   authors       paste the author list straight from the paper, as one line.
+#                 "Mohammed Mutaher" is bolded automatically.
+#
+# WHEN A PREPRINT GETS PUBLISHED: keep the biorxiv_doi line, then add
+#   doi:   (the journal DOI)   and   venue:   (the journal name)
+# and both buttons appear. Until then it is labeled "bioRxiv (preprint)".
 # ---------------------------------------------------------------
 
 - id: folate_glycosylation
   title: "One-carbon metabolism sustains effector T cell function through cell-surface glycosylation"
-  venue: bioRxiv (preprint), 2026
-  doi: 10.64898/2026.10.06.756889
+  year: 2026
+  biorxiv_doi: 10.64898/2026.10.06.756889
   featured: true
   image: ""
   tags:
@@ -27,8 +33,8 @@
 
 - id: tcf7_trim28
   title: "Discovery of Tcf7 regulators with clonally-resolved CRISPR screens identifies Trim28 as a mediator of CD8 T cell differentiation in tumors"
-  venue: bioRxiv (preprint), 2026
-  doi: 10.64898/2026.06.14.732162
+  year: 2026
+  biorxiv_doi: 10.64898/2026.06.14.732162
   featured: true
   image: ""
   equal_contribution: true
@@ -38,8 +44,8 @@
 
 - id: ml_challenge
   title: "A community machine learning challenge to predict the effects of gene perturbations on T cell differentiation for cancer immunotherapy"
-  venue: bioRxiv (preprint), 2026
-  doi: 10.64898/2026.05.21.726863
+  year: 2026
+  biorxiv_doi: 10.64898/2026.05.21.726863
   featured: true
   image: ""
   tags:
@@ -48,7 +54,8 @@
 
 - id: biotin_ligase
   title: "An affinity reagent-conjugated biotin ligase for amplified cell surface labelling in vitro and in vivo"
-  venue: Scientific Reports, 2026
+  year: 2026
+  venue: Scientific Reports
   doi: 10.1038/s41598-026-46452-7
   featured: true
   image: ""

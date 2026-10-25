@@ -20,7 +20,11 @@
       <div class="publication-note">* Equal contribution</div>
       {% endif %}
       <div class="publication-venue">
-        <span>{{ publication.venue }}</span>
+        {% if publication.doi %}
+        <span>{{ publication.venue }}, {{ publication.year }}</span>
+        {% else %}
+        <span>bioRxiv (preprint), {{ publication.year }}</span>
+        {% endif %}
       </div>
 
       <div class="publication-links buttons">
@@ -28,6 +32,12 @@
         <a class="external-link button is-small is-ghost" href="https://doi.org/{{ publication.doi }}" target="_blank" rel="noopener">
           <span class="icon"><i class="fas fa-file-alt"></i></span>
           <span>Paper</span>
+        </a>
+        {% endif %}
+        {% if publication.biorxiv_doi %}
+        <a class="external-link button is-small is-ghost" href="https://doi.org/{{ publication.biorxiv_doi }}" target="_blank" rel="noopener">
+          <span class="icon"><i class="ai ai-biorxiv"></i></span>
+          <span>bioRxiv</span>
         </a>
         {% endif %}
         {% if publication.pdf_link %}

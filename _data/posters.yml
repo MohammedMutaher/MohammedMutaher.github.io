@@ -1,56 +1,53 @@
 # ---------------------------------------------------------------
 # POSTERS AND PRESENTATIONS  (newest first)
 #
-# To add one, copy a block and edit it. Fields:
+# One block per poster/talk TITLE. Every meeting where you presented it
+# goes in that block's "presentations" list (they become teal bullets).
+# To add a new title, copy a whole block. To add another meeting for an
+# existing title, copy one "- event:" group.
+#
 #   title      poster / talk title
 #   authors    (optional) paste the author list; "Mohammed Mutaher" is bolded.
-#              Leave it as "" to hide the line.
+#              Leave as "" to hide the line.
 #   event      meeting name
 #   location   city, state
 #   date       as you want it displayed
 #   url        (optional) link on the meeting name to the event website
-#   poster     (optional) path to a picture or PDF of your poster, e.g.
+#   poster     (optional) path to a picture or PDF of the poster, e.g.
 #              /images/posters/broad-retreat-2024.png
-#              Upload the file to the images/posters folder on GitHub first.
+#              Upload the file to images/posters on GitHub first.
 #              The little poster icon only appears once this is filled in.
 # ---------------------------------------------------------------
 
 - title: "Discovery of Tcf7 regulators to improve CD8 T cell persistence and long-term tumor control"
   authors: ""
-  event: "Broad Institute of MIT and Harvard Annual Scientific Retreat"
-  location: "Boston, MA"
-  date: "December 16–17, 2024"
-  url: ""
-  poster: ""
-
-- title: "Discovery of Tcf7 regulators to improve CD8 T cell persistence and long-term tumor control"
-  authors: ""
-  event: "Cancer Research Institute (CRI) and European Network for Cancer Immunotherapy (ENCI) International Cancer Immunotherapy Conference: Translating Science Into Survival"
-  location: "Washington, DC"
-  date: "September 8–11, 2024"
-  url: ""
-  poster: ""
-
-- title: "Discovery of Tcf7 regulators to improve CD8 T cell persistence and long-term tumor control"
-  authors: ""
-  event: "Arthur and Sandra Irving Cancer Immunology Retreat"
-  location: "Cambridge, MA"
-  date: "July 9, 2024"
-  url: ""
-  poster: ""
-
-- title: "Discovery of Tcf7 regulators to improve CD8 T cell persistence and long-term tumor control"
-  authors: ""
-  event: "National Human Genome Research Institute (NHGRI) Research Training and Career Development Meeting"
-  location: "Seattle, WA"
-  date: "April 7–9, 2024"
-  url: ""
-  poster: ""
+  presentations:
+    - event: "Broad Institute of MIT and Harvard Annual Scientific Retreat"
+      location: "Boston, MA"
+      date: "December 16–17, 2024"
+      url: ""
+      poster: ""
+    - event: "Cancer Research Institute (CRI) and European Network for Cancer Immunotherapy (ENCI) International Cancer Immunotherapy Conference: Translating Science Into Survival"
+      location: "Washington, DC"
+      date: "September 8–11, 2024"
+      url: ""
+      poster: ""
+    - event: "Arthur and Sandra Irving Cancer Immunology Retreat"
+      location: "Cambridge, MA"
+      date: "July 9, 2024"
+      url: ""
+      poster: ""
+    - event: "National Human Genome Research Institute (NHGRI) Research Training and Career Development Meeting"
+      location: "Seattle, WA"
+      date: "April 7–9, 2024"
+      url: ""
+      poster: ""
 
 - title: "In-vitro effects of DT2216 on BCL-XL degradation and cell death kinetics"
   authors: ""
-  event: "Novartis Institutes for BioMedical Research (NIBR) Summer of Science Internship Program"
-  location: "Cambridge, MA"
-  date: "August 3, 2022"
-  url: ""
-  poster: ""
+  presentations:
+    - event: "Novartis Institutes for BioMedical Research (NIBR) Summer of Science Internship Program"
+      location: "Cambridge, MA"
+      date: "August 3, 2022"
+      url: ""
+      poster: ""
