@@ -42,10 +42,21 @@ a {
     position: sticky;
     top: 0;
     z-index: 30;
-    padding: 0.75rem 1rem;
+    min-height: 0;
+    padding: 0.6rem 1rem;
     margin-bottom: 0;
     border-bottom: 1px solid rgba(20, 32, 43, 0.08);
     background: rgba(255, 255, 255, 0.96);
+
+    > .container {
+        min-height: 2.75rem;
+    }
+
+    .navbar-menu {
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
 
     .navbar-start {
         align-items: center;
@@ -499,6 +510,43 @@ a {
     max-width: 1000px;
 }
 
+.news-item[hidden] {
+    display: none;
+}
+
+.news-more {
+    margin-left: 9.5rem;
+}
+
+.news-more-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--accent-dark);
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    &:hover {
+        border-color: rgba(0, 127, 134, 0.35);
+        background: var(--accent-soft);
+    }
+
+    .fa-chevron-down {
+        color: var(--accent);
+        font-size: 0.75rem;
+        transition: transform 0.2s ease;
+    }
+
+    &[aria-expanded="true"] .fa-chevron-down {
+        transform: rotate(180deg);
+    }
+}
+
 .news-item {
     position: relative;
     display: grid;
@@ -618,6 +666,11 @@ a {
         font-weight: 700;
     }
 
+    /* teal dropdown arrow */
+    .navbar-link:not(.is-arrowless)::after {
+        border-color: var(--accent);
+    }
+
     .navbar-link:hover,
     &.is-active .navbar-link {
         border-color: rgba(0, 127, 134, 0.35);
@@ -634,7 +687,7 @@ a {
         margin-top: 0.35rem;
         border: 1px solid var(--line);
         border-radius: 8px;
-        box-shadow: 0 10px 30px rgba(20, 32, 43, 0.12);
+        box-shadow: none;
         background: #ffffff;
         z-index: 50;
     }
@@ -744,6 +797,10 @@ a {
     .news-timeline {
         --news-date-column: 0px;
         --news-gutter: 0px;
+    }
+
+    .news-more {
+        margin-left: 1.25rem;
     }
 
     .news-item {

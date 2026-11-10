@@ -9,7 +9,7 @@ Personal academic website, hosted with GitHub Pages from this repository.
 | Bio paragraph, email, LinkedIn, ORCID, Scholar ID | `_config.yml` |
 | Publications, authors, tabs, "featured" cards | `_data/publications.yml` |
 | Posters and presentations (+ poster image links) | `_data/posters.yml` |
-| News timeline | `_data/news.yml` |
+| News timeline (newest 10 show; the rest sit behind "See more") | `_data/news.yml` |
 | Publication + citation counts in the title card | automatic (see below); `_data/live_stats.yml` |
 | Figures for papers | upload to `images/`, then put the file name in `image:` |
 | Poster pictures | upload to `images/posters/`, then set `poster:` to `/images/posters/yourfile.png` |

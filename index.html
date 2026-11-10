@@ -112,11 +112,11 @@ layout: null
           <div class="navbar-item has-dropdown nav-dropdown" data-nav-dropdown>
             <a class="navbar-link" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false" data-nav-toggle>Menu</a>
             <div class="navbar-dropdown">
-              <a class="navbar-item" href="#about">About me</a>
-              <a class="navbar-item" href="#work">Selected works</a>
+              <a class="navbar-item" href="#about">About Me</a>
+              <a class="navbar-item" href="#work">Selected Works</a>
               <a class="navbar-item" href="#publications">Publications</a>
-              <a class="navbar-item" href="#posters">Posters and presentations</a>
-              <a class="navbar-item" href="#news">Recent news</a>
+              <a class="navbar-item" href="#posters">Posters and Presentations</a>
+              <a class="navbar-item" href="#news">News</a>
             </div>
           </div>
         </div>
@@ -218,8 +218,8 @@ layout: null
   <section class="section section-band" id="work">
     <div class="container is-max-widescreen">
       <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h2 class="title is-3">Featured Research</h2>
+        <p class="eyebrow">Featured research</p>
+        <h2 class="title is-3">Selected Works</h2>
       </div>
 
       <div class="featured-grid">
@@ -249,8 +249,8 @@ layout: null
   <section class="section" id="publications">
     <div class="container is-max-widescreen">
       <div class="section-heading">
-        <p class="eyebrow">Publications</p>
-        <h2 class="title is-3">Recent Publications</h2>
+        <p class="eyebrow">Papers and preprints</p>
+        <h2 class="title is-3">Publications</h2>
       </div>
 
       <div class="filter-bar" role="group" aria-label="Filter publications by topic">
@@ -272,7 +272,7 @@ layout: null
   <section class="section section-band" id="posters">
     <div class="container is-max-widescreen">
       <div class="section-heading">
-        <p class="eyebrow">Presentations</p>
+        <p class="eyebrow">Conferences and meetings</p>
         <h2 class="title is-3">Posters and Presentations</h2>
       </div>
 
@@ -308,9 +308,10 @@ layout: null
         <h2 class="title is-3">News</h2>
       </div>
 
+      {% assign news_limit = 10 %}
       <div class="news-timeline">
         {% for news in site.data.news %}
-        <article class="news-item">
+        <article class="news-item"{% if forloop.index > news_limit %} data-news-extra hidden{% endif %}>
           <div class="news-date">{{ news.date }}</div>
           <div class="news-content">
             <p>{{ news.description | markdownify | remove: '<p>' | remove: '</p>' | replace: '<a href=', '<a target="_blank" rel="noopener" href=' }}</p>
@@ -318,14 +319,22 @@ layout: null
         </article>
         {% endfor %}
       </div>
+      {% if site.data.news.size > news_limit %}
+      <div class="news-more">
+        <button class="news-more-button" type="button" data-news-toggle aria-expanded="false">
+          <span data-news-toggle-label>See more</span>
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      {% endif %}
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
       <div class="content footer-links has-text-centered">
-        <a href="mailto:{{ site.email }}" aria-label="Email">
-          <i class="fas fa-envelope"></i>
+        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
         </a>
         <a class="external-link" href="https://orcid.org/{{ site.orcid }}" target="_blank" rel="noopener" aria-label="ORCID">
           <i class="ai ai-orcid"></i>
@@ -333,8 +342,8 @@ layout: null
         <a class="external-link" href="{{ site.linkedin_url }}" target="_blank" rel="noopener" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a class="external-link" href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar">
-          <i class="ai ai-google-scholar"></i>
+        <a href="mailto:{{ site.email }}" aria-label="Email">
+          <i class="fas fa-envelope"></i>
         </a>
       </div>
       <div class="columns is-centered has-text-centered">

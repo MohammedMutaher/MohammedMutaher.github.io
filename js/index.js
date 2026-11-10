@@ -31,6 +31,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // ---- News: "See more" expander ----
+    var newsToggle = document.querySelector('[data-news-toggle]');
+    if (newsToggle) {
+        var newsExtras = Array.from(document.querySelectorAll('[data-news-extra]'));
+        var newsLabel = newsToggle.querySelector('[data-news-toggle-label]');
+        newsToggle.addEventListener('click', function() {
+            var expand = newsToggle.getAttribute('aria-expanded') !== 'true';
+            newsExtras.forEach(function(item) { item.hidden = !expand; });
+            newsToggle.setAttribute('aria-expanded', expand ? 'true' : 'false');
+            newsLabel.textContent = expand ? 'Show less' : 'See more';
+        });
+    }
+
     // ---- Publication topic tabs ----
     var buttons = Array.from(document.querySelectorAll('[data-publication-filter]'));
     var publications = Array.from(document.querySelectorAll('[data-publication]'));
